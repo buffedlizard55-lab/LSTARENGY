@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+artifacts/
+playwright-report/
+test-results/
+coverage/
+docs/
+index.html
+package-lock.json

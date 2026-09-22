@@ -1,0 +1,4 @@
+"data_kind","as_of","model_version","research_rules","scenario","lineup_number","salary","mean_points","QB","RB1","RB2","WR1","WR2","WR3","TE","FLEX","DST"
+"synthetic","2026-09-22T16:00:00Z","synthetic-recency-mean-v1","research-nfl-shaped-v1","baseline","1","49800","144.0839","atlas-qb","harbor-rb","summit-rb","atlas-wr-a","harbor-wr-a","harbor-wr-b","summit-te","atlas-wr-b","harbor-dst"
+"synthetic","2026-09-22T16:00:00Z","synthetic-recency-mean-v1","research-nfl-shaped-v1","baseline","2","49900","144.0834","atlas-qb","atlas-rb","harbor-rb","atlas-wr-a","harbor-wr-a","harbor-wr-b","summit-te","atlas-wr-b","harbor-dst"
+"synthetic","2026-09-22T16:00:00Z","synthetic-recency-mean-v1","research-nfl-shaped-v1","baseline","3","49600","143.9750","harbor-qb","harbor-rb","summit-rb","atlas-wr-a","harbor-wr-a","harbor-wr-b","summit-te","atlas-wr-b","harbor-dst"

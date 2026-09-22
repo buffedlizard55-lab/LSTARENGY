@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve RFC4180-style CSV CRLF bytes; allow CR only as a line ending.
+*.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol
