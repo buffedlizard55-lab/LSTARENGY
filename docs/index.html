@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LSTAR Engineering — Sports Projection System Research</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Reverse-engineered analysis of LineStarApp's DFS projection system. Verified data sources, strategies, and tools for building an open sports projection system.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">LSTAR<span class="accent"> Engineering</span></h1>
+      <p class="tagline">Open Research · Sports Projection System Analysis</p>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#features">Features Mapped</a>
+        <a href="#datasources">Data Sources</a>
+        <a href="#algorithm">Algorithm & Patents</a>
+        <a href="#pricing">Paywall</a>
+        <a href="#buildplan">Build Plan</a>
+        <a href="#limitations">Limitations</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Overview -->
+    <section id="overview" class="card">
+      <h2>Project Overview</h2>
+      <p>
+        This repository documents a clean-room reverse engineering of
+        <strong>LineStar</strong> (<a href="https://www.linestarapp.com/" target="_blank" rel="noopener">linestarapp.com</a>),
+        a popular Daily Fantasy Sports (DFS) lineup optimizer and projection platform operated by
+        <strong>BetFully, Inc.</strong> (formerly Fantasy Sports Company, LLC).
+        Every claim below is linked to an official, verifiable public source.
+      </p>
+      <div class="grid-3">
+        <div class="stat">
+          <div class="stat-num">13</div>
+          <div class="stat-label">Sports Covered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Data Factors / Athlete</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">$39.99</div>
+          <div class="stat-label">Monthly Subscription</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Map -->
+    <section id="features" class="card">
+      <h2>LineStar Feature Inventory</h2>
+      <p>Features derived from the official navigation and LineStar's public GitBook documentation.</p>
+
+      <h3>Main Tools (Paid Tier)</h3>
+      <ul class="feature-list">
+        <li><strong>Projections</strong> — Full-slate proprietary DFS point projections, plus a <em>Consensus</em> weighted-average from industry sources. Editable and importable (CSV).</li>
+        <li><strong>Props AI (Proptimize®)</strong> — +EV player-prop betting algorithm, grading each prop against sportsbook lines with edge % and expected value.</li>
+        <li><strong>Best Ball</strong> — Rankings, ADP (Average Draft Position), and draft tools for season-long best-ball contests (NFL, MLB as of 2025).</li>
+      </ul>
+
+      <h3>Research Tools</h3>
+      <div class="grid-2">
+        <div>
+          <h4>Football (NFL / NCAAF / CFL)</h4>
+          <ul>
+            <li>TD Report (Touchdown scoring trends)</li>
+            <li>Snaps — snap counts</li>
+            <li>Redzone — red-zone usage</li>
+            <li>Matchups — matchup breakdowns</li>
+            <li>Team DEFENSE Report — Defense vs Position (DvP)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Basketball (NBA / WNBA / NCAAB)</h4>
+          <ul>
+            <li>Fantasy Defense / Matchups</li>
+            <li>Usage Matrix — usage rate & minutes</li>
+            <li>Team DEFENSE Report (DvP)</li>
+          </ul>
+          <h4>Baseball (MLB)</h4>
+          <ul>
+            <li>Dingers Report — HR matchup report</li>
+            <li>Daily Matchups</li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="feature-list">
+        <li><strong>Projected Ownership (pOwn%)</strong> — Estimated % of contest lineups expected to roster each player, key for GPP leverage.</li>
+        <li><strong>Perfect Lineups</strong> — Historical optimal lineups (past DK/FD optimal outcomes) for backtesting.</li>
+        <li><strong>Salary Comparison</strong> — DraftKings vs FanDuel salary differential.</li>
+        <li><strong>Salary Changes</strong> — Daily salary movement tracking.</li>
+      </ul>
+
+      <h3>Live & Updates</h3>
+      <ul class="feature-list">
+        <li><strong>Starting Lineups (Daily Dashboard)</strong> — Confirmed starting lineups pre-lock.</li>
+        <li><strong>Live Scoring</strong> — Real-time contest scoring.</li>
+        <li><strong>Projection Updates</strong> — Changelog of what changed and why (injuries, weather, line moves).</li>
+      </ul>
+
+      <h3>News & Content</h3>
+      <ul class="feature-list">
+        <li><strong>Player News Feed</strong> — Injury, transaction, beat-reporter updates.</li>
+        <li><strong>Articles & Analysis</strong> — Strategy content from LineStar staff.</li>
+        <li><strong>Community Chat</strong> — Live user chat in mobile apps (FanSense).</li>
+      </ul>
+
+      <h3>Optimizer Capabilities</h3>
+      <ul class="feature-list">
+        <li>Generates <strong>150+ lineups</strong> in one tap.</li>
+        <li>Platform-specific constraints for <strong>DraftKings, FanDuel, Yahoo</strong>.</li>
+        <li>Team stacking, position stacking, bring-back correlations.</li>
+        <li>Player groups (at least / at most / exactly / between N).</li>
+        <li>Exposure limits and per-position caps.</li>
+        <li>Swaptimizer — late-swap optimization after games start.</li>
+        <li>Direct import/export CSV to DFS operators.</li>
+        <li>CSV projection import/export with auto column-detection.</li>
+      </ul>
+    </section>
+
+    <!-- Sports Covered -->
+    <section class="card">
+      <h2>Sports Covered</h2>
+      <p>Verified from the official site's sport switcher:</p>
+      <div class="sports-grid">
+        <span class="sport-tag">NFL</span>
+        <span class="sport-tag">NBA</span>
+        <span class="sport-tag">MLB</span>
+        <span class="sport-tag">NHL</span>
+        <span class="sport-tag">WNBA</span>
+        <span class="sport-tag">PGA</span>
+        <span class="sport-tag">UFC</span>
+        <span class="sport-tag">NAS (NASCAR)</span>
+        <span class="sport-tag">NCAAF</span>
+        <span class="sport-tag">NCAAB</span>
+        <span class="sport-tag">CFL</span>
+        <span class="sport-tag">LoL (Esports)</span>
+        <span class="sport-tag">CS:GO (Esports)</span>
+      </div>
+    </section>
+
+    <!-- Data Sources -->
+    <section id="datasources" class="card">
+      <h2>Data Inputs Used by LineStar's Projections</h2>
+      <p>LineStar explicitly documents these inputs in its official GitBook and app-store listings.</p>
+      <table class="data-table">
+        <thead>
+          <tr><th>Category</th><th>Specific Inputs</th><th>Free / Open Alternative</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Player Performance</td>
+            <td>Historical stats, recent form, usage rates, snap counts, minutes, target share, red-zone usage</td>
+            <td>Sports-Reference (Pro-Football-Reference, Basketball-Reference, Baseball-Reference, Hockey-Reference); nflverse, nba_api, pybaseball, nhl-api-py</td>
+          </tr>
+          <tr>
+            <td>Matchup Data</td>
+            <td>Defense vs Position (DvP), pace of play, home/away splits, park/stadium factors, pitch type vs batter</td>
+            <td>Sports-Reference advanced stats; MLB Statcast via pybaseball; NBA advanced via nba_api</td>
+          </tr>
+          <tr>
+            <td>Vegas / Betting Odds</td>
+            <td>Spreads, moneylines, over/under totals (game totals), implied team totals, win %</td>
+            <td>The Odds API (free tier); ESPN odds endpoints; publicly posted lines</td>
+          </tr>
+          <tr>
+            <td>Weather</td>
+            <td>Temperature, wind, precipitation (outdoor sports — NFL, MLB, PGA)</td>
+            <td>Open-Meteo (free), NOAA weather API</td>
+          </tr>
+          <tr>
+            <td>Injuries</td>
+            <td>Official injury reports, practice participation designations, late scratch alerts</td>
+            <td>ESPN injury API endpoints; official league injury reports (NFL, NBA, MLB, NHL)</td>
+          </tr>
+          <tr>
+            <td>Starting Lineups</td>
+            <td>Confirmed lineups, batting orders, goalie starts, NBA rest reports</td>
+            <td>ESPN depth-chart and roster endpoints; beat-reporter aggregation via news APIs</td>
+          </tr>
+          <tr>
+            <td>Salaries</td>
+            <td>DraftKings, FanDuel, Yahoo player salaries per slate</td>
+            <td>Direct scrape/export from DFS lobby pages (terms-of-service apply)</td>
+          </tr>
+          <tr>
+            <td>Ownership</td>
+            <td>Projected ownership % (pOwn) based on salary, projection, public sentiment, slate dynamics</td>
+            <td>Historical DK/FD ownership data via rotogrinders / twitter aggregation; trained model</td>
+          </tr>
+          <tr>
+            <td>News / Sentiment</td>
+            <td>Beat reporter tweets, press conferences, locker-room news</td>
+            <td>NewsAPI (free tier), RSS feeds, RSS from beat writers; public social feeds</td>
+          </tr>
+          <tr>
+            <td>Consensus Projections</td>
+            <td>Aggregated projections from multiple industry sources (weighted)</td>
+            <td>Public projections from FantasyPros, numberFire, RotoGrinders free picks</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Algorithm & Patents -->
+    <section id="algorithm" class="card">
+      <h2>Projection Algorithm & Patents</h2>
+
+      <h3>Publicly Stated Methodology</h3>
+      <p>Per LineStar's own GitBook documentation:</p>
+      <ol>
+        <li><strong>Base Projection</strong> is computed from historical performance and recent form using statistical models.</li>
+        <li><strong>Modifiers</strong> are applied for matchup, Vegas game environment, weather, injury status, lineup confirmation — over <strong>100 unique factors per athlete</strong>.</li>
+        <li><strong>Real-time updates</strong> re-run projections when news breaks (injuries, line moves, weather shifts).</li>
+        <li><strong>Consensus Projection</strong> is offered as an alternative: a weighted average of external industry projections to reduce modeler bias and outlier risk.</li>
+        <li><strong>Optimizer</strong> uses those projections with salary, position, stacking, exposure, and contest-type constraints to produce lineup sets (integer / combinatorial optimization — a variant of the knapsack problem with correlation).</li>
+      </ol>
+
+      <h3>Issued US Patents Referenced by LineStar</h3>
+      <p>LineStar's docs list four issued US patents. Verified via Google Patents:</p>
+      <ul class="patent-list">
+        <li>
+          <strong>US 9,751,010</strong> — <em>System and method for virtual team assembly</em>
+          (<a href="https://patents.google.com/patent/US9751010" target="_blank" rel="noopener">Google Patents</a>).
+          Core claim: base value + modifiers applied to player objects; projected values generated under constraints (salary cap, position caps) and transmitted as lineup data.
+        </li>
+        <li>
+          <strong>US 9,744,450</strong> — Listed by LineStar as an additional issued patent covering fantasy lineup optimization.
+          (<a href="https://patents.google.com/patent/US9744450" target="_blank" rel="noopener">Google Patents</a>)
+        </li>
+        <li>
+          <strong>US 10,478,721</strong> — Listed by LineStar (continuation / improvement).
+          (<a href="https://patents.google.com/patent/US10478721" target="_blank" rel="noopener">Google Patents</a>)
+        </li>
+        <li>
+          <strong>US 11,660,533</strong> — Listed by LineStar as a more recent issuance.
+          (<a href="https://patents.google.com/patent/US11660533" target="_blank" rel="noopener">Google Patents</a>)
+        </li>
+      </ul>
+      <p class="note">
+        <strong>⚠ Flag for review:</strong> These patents cover specific <em>implementations</em> of lineup assembly systems,
+        not the general idea of fantasy sports or statistical projection. A clean-room implementation that uses
+        standard machine-learning models and standard integer-programming techniques (e.g., MILP via pulp/OR-Tools,
+        genetic algorithms, or Monte Carlo sampling) is generally believed by the open DFS community to be non-infringing,
+        but this is not legal advice. Consult IP counsel before commercial use.
+      </p>
+    </section>
+
+    <!-- Paywall -->
+    <section id="pricing" class="card">
+      <h2>What's Behind the Paywall</h2>
+      <p>Verified from LineStar's public pricing page and app-store listings:</p>
+
+      <table class="data-table">
+        <thead>
+          <tr><th>Plan</th><th>Price</th><th>Includes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monthly Premium</td>
+            <td><strong>$39.99 / month</strong></td>
+            <td>All sports, all tools, Props AI, Optimizer v3/v4, Projections (LineStar + Consensus), Ownership, Live scoring, Mobile apps sync</td>
+          </tr>
+          <tr>
+            <td>Annual Premium</td>
+            <td><strong>$239.99 / year</strong> (~$19.99/month)</td>
+            <td>Same as monthly, at ~50% discount. 7-day free trial available.</td>
+          </tr>
+          <tr>
+            <td>Free tier</td>
+            <td>$0</td>
+            <td>App download; limited preview data; app-store listings indicate in-app purchases unlock premium.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Specific paywalled components (no free public access):</h3>
+      <ul class="feature-list">
+        <li>LineStar's proprietary projection numbers (PP) and Consensus numbers (ConsPP)</li>
+        <li>Props AI +EV edges and prop grading</li>
+        <li>Projected Ownership percentages (pOwn%)</li>
+        <li>3rd/4th Gen Optimizer unlimited builds (150+ lineups)</li>
+        <li>Swaptimizer / late swap</li>
+        <li>Stack Finder advanced controls</li>
+        <li>Touchdown Report, Dinger Report detailed usage charts</li>
+        <li>Historical Perfect Lineup archives beyond a preview</li>
+        <li>CSV export of full projection sets</li>
+        <li>Best Ball rankings & ADP</li>
+      </ul>
+    </section>
+
+    <!-- Build Plan -->
+    <section id="buildplan" class="card">
+      <h2>Open Build Plan — Rebuilding the System</h2>
+      <p>A clean-room, free-data implementation path. Each step uses only public / officially licensed data.</p>
+
+      <h3>Phase 1 — Data Pipeline</h3>
+      <ul>
+        <li>Ingest historical box scores and advanced stats via open Python libraries:
+          <code>nfl-data-py</code> / <code>nflfastR</code> (nflverse),
+          <code>nba_api</code>, <code>pybaseball</code>, <code>nhl-api-py</code>,
+          <code>sportsipy</code>, ESPN public API endpoints.
+        </li>
+        <li>Daily feed of Vegas odds: The Odds API free tier; ESPN odds endpoints.</li>
+        <li>Weather: Open-Meteo historical + forecast API.</li>
+        <li>Injuries & starting lineups: ESPN public APIs + official league injury report pages.</li>
+        <li>Salaries: scrape/export from DFS lobby pages (for personal research use).</li>
+        <li>News: NewsAPI free tier, RSS beat-writer feeds.</li>
+        <li>Store in a PostgreSQL/SQLite data lake; schedule daily pulls via GitHub Actions.</li>
+      </ul>
+
+      <h3>Phase 2 — Projection Model</h3>
+      <ul>
+        <li>For each sport, build a per-stat projection model (e.g., for NFL: pass yds, rush yds, targets, TDs, etc.) using:
+          <ul>
+            <li>Recent rolling averages (3-, 5-, 10-game windows, weighted by recency)</li>
+            <li>Matchup adjustments (DvP, pace, park/weather factors)</li>
+            <li>Vegas-implied team totals as a calibration anchor</li>
+            <li>Usage / snap / minutes projections from role models</li>
+          </ul>
+        </li>
+        <li>Blend with a consensus model: scrape freely available public projections and average.</li>
+        <li>Convert per-stat projections into fantasy points using each platform's scoring rules (DK / FD / Yahoo).</li>
+        <li>Self-healing: nightly back-test that compares projected vs. actual and retrains weights.</li>
+      </ul>
+
+      <h3>Phase 3 — Ownership Model</h3>
+      <ul>
+        <li>Train a regression (XGBoost / logistic) model on historical actual ownership (from public contests / posted winners) using features: salary, points-per-$ rank, projection rank, Vegas total, team stack appeal, late-news flag.</li>
+        <li>Update up to lock based on news-driven shifts.</li>
+      </ul>
+
+      <h3>Phase 4 — Optimizer</h3>
+      <ul>
+        <li>Implement as a Mixed Integer Linear Program (MILP) using Google OR-Tools (Apache 2.0) or PuLP (MIT).</li>
+        <li>Constraints: salary cap, position slots, team-stack rules, player groups, exposure caps, correlation (QB-WR stacks, bring-backs).</li>
+        <li>Generate N-lineup sets (1–150) with diversity constraints for GPPs.</li>
+        <li>Cash vs GPP modes: cash maximizes projected points floor; GPP maximizes a leverage score (projection × (1 - ownership)).</li>
+        <li>Late-swap swaptimizer: re-optimize after lock using only players from unfinished games.</li>
+      </ul>
+
+      <h3>Phase 5 — Web App</h3>
+      <ul>
+        <li>Frontend: React + Vite PWA, or a lightweight static site like this one backed by JSON data files published to GitHub Pages.</li>
+        <li>Backend: FastAPI + Postgres on Fly.io / Render free tier.</li>
+        <li>Daily auto-pull via GitHub Actions cron; results committed back to a data branch for transparency.</li>
+        <li>CSV import/export of projections and lineups (matching LineStar's interface).</li>
+      </ul>
+
+      <h3>Phase 6 — Props AI Equivalent</h3>
+      <ul>
+        <li>For each player prop on major sportsbooks (from free odds APIs), compute a model projection, compare to the posted line, surface +EV opportunities where model &gt; line by a margin threshold.</li>
+      </ul>
+    </section>
+
+    <!-- Limitations -->
+    <section id="limitations" class="card">
+      <h2>Limitations & Open Questions (Flagged for Review)</h2>
+
+      <div class="flag">
+        <strong>1. Legal / TOS.</strong> Scraping DraftKings, FanDuel, or Yahoo salaries and contest data may violate their Terms of Service.
+        Verify before any automated access. Use official APIs where available; otherwise rely on user-supplied CSV uploads.
+      </div>
+      <div class="flag">
+        <strong>2. Patents.</strong> LineStar holds four issued US patents on lineup assembly systems (US 9,751,010; 9,744,450; 10,478,721; 11,660,533).
+        We are <em>not</em> copying their proprietary projection coefficients, UI, or proprietary algorithms. We are documenting
+        publicly observable features and rebuilding with standard OR / ML tools. Obtain legal review before commercial launch.
+      </div>
+      <div class="flag">
+        <strong>3. Proprietary coefficients are unknown.</strong> LineStar does not publish the exact weights of its 100+ factors.
+        Any open model will be an approximation and must be back-tested rigorously against past slates.
+      </div>
+      <div class="flag">
+        <strong>4. Real-time data latency.</strong> Free APIs have rate limits and lag. LineStar likely pays for premium low-latency
+        feeds (e.g., Sportradar, STATS, FantasyData). Free builds will be minutes behind — material for late-swap and in-game decisions.
+      </div>
+      <div class="flag">
+        <strong>5. Ownership ground truth.</strong> Actual contest ownership is released by DFS sites after contests settle.
+        Historical datasets are scattered (RotoGrinders, Reddit posts, Twitter); no free bulk API exists. This limits ownership-model training.
+      </div>
+      <div class="flag">
+        <strong>6. Beat-reporter sentiment.</strong> LineStar aggregates human-sourced info from beat writers and the community (FanSense).
+        Automated news sentiment is a hard NLP problem and adds marginal but real edge.
+      </div>
+      <div class="flag">
+        <strong>7. Esports (LoL, CS:GO) & PGA/UFC data.</strong> Open historical data is thinner for these sports than for the big four leagues; accuracy will be lower in v1.
+      </div>
+      <div class="flag">
+        <strong>8. Sportsbook lines for Props AI.</strong> Free odds APIs cover game lines well; player-prop coverage is spotty.
+        Expect to need a paid plan (e.g., OddsJam, Sportradar) for full prop coverage.
+      </div>
+      <div class="flag">
+        <strong>9. Mobile apps & push notifications.</strong> Native iOS/Android apps are outside the scope of the first web build.
+        A PWA can cover cross-device use initially.
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <section id="sources" class="card">
+      <h2>Official Verified Sources</h2>
+      <p>Every claim on this page can be cross-checked at one of the following links. All sources were accessed on the date this site was generated.</p>
+      <ol class="source-list">
+        <li>
+          LineStar Official Website — Features, Pricing, Navigation:
+          <a href="https://www.linestarapp.com/" target="_blank" rel="noopener">https://www.linestarapp.com/</a>
+        </li>
+        <li>
+          LineStar Official Pricing Page:
+          <a href="https://www.linestarapp.com/Pricing" target="_blank" rel="noopener">https://www.linestarapp.com/Pricing</a>
+        </li>
+        <li>
+          LineStar Official Documentation (GitBook) — "Our Features":
+          <a href="https://linestar.gitbook.io/linestar-app/overview/our-features" target="_blank" rel="noopener">https://linestar.gitbook.io/linestar-app/overview/our-features</a>
+        </li>
+        <li>
+          LineStar GitBook — "Lineup Optimizer":
+          <a href="https://linestar.gitbook.io/linestar-app/feature-guides/lineup-optimizer" target="_blank" rel="noopener">https://linestar.gitbook.io/linestar-app/feature-guides/lineup-optimizer</a>
+        </li>
+        <li>
+          LineStar on Apple App Store (developer: BetFully, Inc.; pricing, 100+ factors, patents):
+          <a href="https://apps.apple.com/us/app/linestar-dfs-optimizer-props/id1036987720" target="_blank" rel="noopener">https://apps.apple.com/us/app/linestar-dfs-optimizer-props/id1036987720</a>
+        </li>
+        <li>
+          LineStar FanDuel app (patents, sports covered):
+          <a href="https://apps.apple.com/us/app/linestar-for-fanduel-dfs/id933561226" target="_blank" rel="noopener">https://apps.apple.com/us/app/linestar-for-fanduel-dfs/id933561226</a>
+        </li>
+        <li>
+          LineStar on Google Play Store (developer, 4th gen optimizer, pricing, features):
+          <a href="https://play.google.com/store/apps/details?id=com.fantasysportsco.yahoodf" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.fantasysportsco.yahoodf</a>
+        </li>
+        <li>
+          US Patent 9,751,010 — System and method for virtual team assembly:
+          <a href="https://patents.google.com/patent/US9751010" target="_blank" rel="noopener">https://patents.google.com/patent/US9751010</a>
+        </li>
+        <li>
+          US Patent 9,744,450 (referenced by LineStar):
+          <a href="https://patents.google.com/patent/US9744450" target="_blank" rel="noopener">https://patents.google.com/patent/US9744450</a>
+        </li>
+        <li>
+          US Patent 10,478,721 (referenced by LineStar):
+          <a href="https://patents.google.com/patent/US10478721" target="_blank" rel="noopener">https://patents.google.com/patent/US10478721</a>
+        </li>
+        <li>
+          US Patent 11,660,533 (referenced by LineStar):
+          <a href="https://patents.google.com/patent/US11660533" target="_blank" rel="noopener">https://patents.google.com/patent/US11660533</a>
+        </li>
+        <li>
+          LineStar NFL Projections page (UI/controls reference):
+          <a href="https://www.linestarapp.com/Projections" target="_blank" rel="noopener">https://www.linestarapp.com/Projections</a>
+        </li>
+        <li>
+          LineStar Ownership page reference:
+          <a href="https://www.linestarapp.com/Ownership/Sport/NFL/Site/DraftKings" target="_blank" rel="noopener">https://www.linestarapp.com/Ownership/Sport/NFL/Site/DraftKings</a>
+        </li>
+      </ol>
+
+      <h3>Free Data Source References (for the open build)</h3>
+      <ol class="source-list" start="14">
+        <li>nflverse — Open NFL data ecosystem (R/Python): <a href="https://github.com/nflverse" target="_blank" rel="noopener">https://github.com/nflverse</a></li>
+        <li>nba_api — NBA stats API Python client: <a href="https://github.com/swar/nba_api" target="_blank" rel="noopener">https://github.com/swar/nba_api</a></li>
+        <li>pybaseball — MLB Statcast / Baseball Reference Python client: <a href="https://github.com/jldbc/pybaseball" target="_blank" rel="noopener">https://github.com/jldbc/pybaseball</a></li>
+        <li>nhl-api-py — NHL API Python client: <a href="https://pypi.org/project/nhl-api-py/" target="_blank" rel="noopener">https://pypi.org/project/nhl-api-py/</a></li>
+        <li>sportsipy — Sports Reference scraper (NFL/NBA/MLB/NHL): <a href="https://github.com/roclark/sportsipy" target="_blank" rel="noopener">https://github.com/roclark/sportsipy</a></li>
+        <li>BALLDONTLIE — free multi-sport API: <a href="https://www.balldontlie.io/" target="_blank" rel="noopener">https://www.balldontlie.io/</a></li>
+        <li>TheSportsDB — free JSON sports API: <a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">https://www.thesportsdb.com/</a></li>
+        <li>Open-Meteo — free weather API: <a href="https://open-meteo.com/" target="_blank" rel="noopener">https://open-meteo.com/</a></li>
+        <li>ESPN public API endpoint reference: <a href="https://gist.github.com/nntrn/ee26cb2a0716de0947a0a4e9a157bc1c" target="_blank" rel="noopener">https://gist.github.com/nntrn/ee26cb2a0716de0947a0a4e9a157bc1c</a></li>
+        <li>Google OR-Tools — open MILP/combinatorial optimizer: <a href="https://developers.google.com/optimization" target="_blank" rel="noopener">https://developers.google.com/optimization</a></li>
+      </ol>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        LSTAR Engineering Research · Built for educational and analytical purposes.
+        No claim of affiliation with, or endorsement by, LineStar, BetFully Inc., DraftKings, FanDuel, or Yahoo.
+        All trademarks are property of their respective owners.
+      </p>
+      <p>Last generated: 2026-09-22 · See <a href="https://github.com/buffedlizard55-lab/LSTARENGY">GitHub repo</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
