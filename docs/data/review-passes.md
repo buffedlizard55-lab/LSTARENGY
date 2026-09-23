@@ -48,6 +48,7 @@ Rechecked the original request against the shipped files rather than treating a 
 - Kept all-push probability arithmetic exact and avoided a tiny negative loss probability from subtraction order.
 - Hid previous results while a new scenario is checking; rejected malformed worker results; ignored responses after worker termination. Added browser coverage for malformed output.
 - Verified source links/anchors, source/access evidence separation, Markdown downloads, root/`docs`/project-prefix paths, no-JavaScript fallbacks, worker errors, stale-input export blocking and the explicit absence of live data.
+- Both initial GitHub CI runs passed, but annotations exposed deprecated Node 20 action runtimes and an upcoming `ubuntu-latest` image migration. Resolved the latest stable releases from the official `actions` repositories, inspected their Node 24 runtime metadata, pinned immutable SHAs and Ubuntu 24.04, disabled persisted checkout credentials, and reran GitHub checks before merge.
 - Release staging exposed CSV CRLF bytes and Markdown hard-break spaces as whitespace warnings. Added explicit CSV Git attributes that preserve the intended bytes; removed trailing Markdown spaces. The staged diff check was rerun.
 - Rechecked the model card and next-session handoff for missing production gates, unauthorized-access assumptions, data-quality claims and misleading “complete replica” language.
 
