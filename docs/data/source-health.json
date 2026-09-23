@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "statement": "Public-document availability only. Never changes source observation dates or semantic review status. LineStar monitoring is disabled.",
+  "snapshotReviewedOn": "2026-09-22",
+  "results": [
+    {
+      "sourceId": "S01",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.489Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S02",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.494Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S03",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.494Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S04",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.494Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S05",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.495Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S06",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.495Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S07",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.495Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S08",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.496Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S09",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.496Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S10",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.496Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S11",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.497Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S12",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.497Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S13",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.497Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S14",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.497Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S15",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.497Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S16",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:54.498Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S17",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:55.132Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S18",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:55.642Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S19",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:55.643Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S20",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:55.643Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S21",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:55.643Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S22",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.159Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S23",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.159Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S24",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.160Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S25",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.160Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S26",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.160Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    },
+    {
+      "sourceId": "S27",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.160Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S28",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:56.704Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S29",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:57.221Z",
+      "status": "network-error",
+      "detail": "fetch failed"
+    },
+    {
+      "sourceId": "S30",
+      "reviewedOn": "2026-09-22",
+      "checkedAt": "2026-09-22T23:26:57.730Z",
+      "status": "skipped-policy",
+      "detail": "Automated monitoring disabled; no request made."
+    }
+  ]
+}

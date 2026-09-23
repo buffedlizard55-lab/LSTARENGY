@@ -1,0 +1,2167 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-09-22",
+  "scope": "Dated public-description review, not an exhaustive inventory of authenticated screens or an extraction of private algorithms.",
+  "methodology": "Claims are linked to short excerpts observed on public primary or maintainer pages. Vendor statements, navigation observations, unknowns and project proposals are explicitly separated. Traceability and hashes are mechanically checked; neither hashes nor a successful HTTP response establish truth. No authenticated pages, protected APIs or LineStar output datasets were used.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Public navigation",
+      "url": "https://www.linestarapp.com/",
+      "publisher": "LineStar",
+      "kind": "Vendor website",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "A navigation link is evidence of a label, not successful access, current slate coverage, or a working feed. Site text includes duplicated mobile navigation.",
+      "excerpts": [
+        {
+          "id": "sports",
+          "text": "NFL NBA MLB NHL WNBA PGA UFC NAS NCAAF NCAAB CFL LOL CSGO",
+          "locator": "Sport switcher; adjacent labels, whitespace normalized",
+          "sha256": "8b2343ed92b68d656e10e165783faeb85c3dfd637bd64d2227499fc62aa16ca9"
+        },
+        {
+          "id": "main",
+          "text": "ProjectionsFull slate projections",
+          "locator": "NFL navigation > Main tools",
+          "sha256": "579cae255c5551c930b98e53d605504377200ae560286365d53f4a5c89c704b0"
+        },
+        {
+          "id": "bestball",
+          "text": "Best BallNewRankings, ADP & draft tools",
+          "locator": "NFL navigation > Main tools",
+          "sha256": "00fff1beba8561e1ddf3d6668273bed93c853b9eb457bc278cf8826d63fd6c21"
+        },
+        {
+          "id": "td",
+          "text": "TD ReportNewTD scoring trends",
+          "locator": "NFL navigation > Research",
+          "sha256": "1dc19720f12706130eb97222b3edb01ed9879de2f70094c8d69572273333ac91"
+        },
+        {
+          "id": "snaps",
+          "text": "SnapsSnap counts",
+          "locator": "NFL navigation > Research",
+          "sha256": "40f9582c9a3e40ad6437b1e717cd0712d231659476dd421317089b63a123104a"
+        },
+        {
+          "id": "redzone",
+          "text": "RedzoneRed zone usage",
+          "locator": "NFL navigation > Research",
+          "sha256": "31311e2906e12e155b59865202343a1b0c2fb83bd6f1064fdc73a7011b0fb0f0"
+        },
+        {
+          "id": "matchups",
+          "text": "MatchupsMatchup breakdowns",
+          "locator": "NFL navigation > Research",
+          "sha256": "e51c9ed03c460b198594966d7f16e5479fe75c342570a606200b3f2efa14e89c"
+        },
+        {
+          "id": "defense",
+          "text": "Team DEFENSE ReportNewDefense vs position",
+          "locator": "NFL / NBA navigation > Research",
+          "sha256": "fbc7e426f0420c438fe7dc072c64405a21fa2ddbb4d47343b818486c977ee1b8"
+        },
+        {
+          "id": "salaries",
+          "text": "Salary ComparisonDK vs FD",
+          "locator": "NFL navigation > Research",
+          "sha256": "80d15576acfe17b4fa7fd31e7e1bc2365e98aa59ddc8b16c03b7f836ba91b3c4"
+        },
+        {
+          "id": "changes",
+          "text": "Salary ChangesDaily moves",
+          "locator": "NFL navigation > Research",
+          "sha256": "be8e6b9272ea91837c38aa25540708688a45e875bfa2e92189b0acaf87a1e573"
+        },
+        {
+          "id": "lineups",
+          "text": "Starting LineupsConfirmed lineups",
+          "locator": "NFL navigation > Live & Updates",
+          "sha256": "8569511e2175f3f7766fdd536af505f381275fbd9425487c74fb41d2f8bb61ae"
+        },
+        {
+          "id": "live",
+          "text": "Live ScoringLive contest scoring",
+          "locator": "NFL navigation > Live & Updates",
+          "sha256": "56efdedcff03c36a8f1cf21a78ec420ea31b8ca748678c79c840be16a7f17e25"
+        },
+        {
+          "id": "updates",
+          "text": "Projection UpdatesWhat changed & why",
+          "locator": "NFL navigation > Live & Updates",
+          "sha256": "72187e65cc8674a8260abb6a7b74fd84703374ad211549f3b54cf38535d64d99"
+        },
+        {
+          "id": "news",
+          "text": "NewsPlayer news feed",
+          "locator": "NFL navigation > News & Content",
+          "sha256": "ab32ddb21aa3455cca4384bbb3ffbbc55c641dbcc2276f6a9159a429add9689e"
+        },
+        {
+          "id": "articles",
+          "text": "Articles and NewsAnalysis & strategy",
+          "locator": "NFL navigation > News & Content",
+          "sha256": "25e2b7d65a31782d05b925364d88c20c64bcb8491ba8503da9b90c537f694886"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "Premium pricing and feature descriptions",
+      "url": "https://www.linestarapp.com/Pricing",
+      "publisher": "LineStar",
+      "kind": "Vendor website",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Seller-authored comparison, not an independent review. Prices are displayed offers, not a verified checkout total. Icons in comparison tables did not reliably extract; no competitor comparison claims are reproduced.",
+      "excerpts": [
+        {
+          "id": "webprice",
+          "text": "$39.99/month or save even more with a $239.99 annual membership",
+          "locator": "Pricing navigation description",
+          "sha256": "f5c4408e1e290ce852d668181f2f1e2175eb1dca7b557d5cb7c3d6abce1fbe44"
+        },
+        {
+          "id": "premium",
+          "text": "All sports and providers we cover, lineup optimization/building, mobile apps and website - one low price.",
+          "locator": "FAQ: What does LineStar Premium include?",
+          "sha256": "84d44724effd37ab7b53d022fcc8c764228d65322af2a5294c32d975638b7b95"
+        },
+        {
+          "id": "exposures",
+          "text": "Stacks, Exposures, Budget Management, and lots more",
+          "locator": "Advanced Settings",
+          "sha256": "f3aab2c0761c5c867cc44d4143c817eb52f360d5f1fe0755b4e5f52d6cea60c4"
+        },
+        {
+          "id": "news",
+          "text": "From industry experts, beat reporters, and team sources",
+          "locator": "Breaking News & Injuries",
+          "sha256": "72b85a3714f9c2b7a1ad5c28d303d5845c4347ce9b1fb83a2d4f8ba1dc7cfa62"
+        },
+        {
+          "id": "odds",
+          "text": "Steer your DFS decisions with O/U's and implied team points",
+          "locator": "Vegas Odds",
+          "sha256": "6b9b09e05a531542879e6f2eac84279867e8459608395f194a488ac763b30f70"
+        },
+        {
+          "id": "dingers",
+          "text": "Home Run PredictionsDaily Dinger Report for MLB",
+          "locator": "2026 comparison table",
+          "sha256": "8a4987b81bf6e82992784f89bda42a6ad52ae4a41616e43bce253fb2510b7dcb"
+        },
+        {
+          "id": "court",
+          "text": "Court SimulatorNBA rotation & minutes scenarios",
+          "locator": "2026 comparison table",
+          "sha256": "f5a4f37ce7ab6f23b3efc6293f8cf00c1afe45b6337f6d68ff620701dd548025"
+        },
+        {
+          "id": "sports12",
+          "text": "12sports",
+          "locator": "Comparison table > Sports included > LineStar",
+          "sha256": "2525c3fd37f27448d153fa9d07fe4ea042775b97ac17413ddd6d9074b86bae09"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "Our Features",
+      "url": "https://linestar.gitbook.io/linestar-app/overview/our-features",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Vendor descriptions establish what is said, not accuracy, exclusivity, or legal status. Some GitBook pages display a relative last-updated age of three years.",
+      "excerpts": [
+        {
+          "id": "inputs",
+          "text": "player performance history, upcoming matchups, Vegas odds, and weather conditions",
+          "locator": "Advanced DFS Projections > Comprehensive Data",
+          "sha256": "7e22f3428e28b43c550c2add8210cee2d2c5ff40463b304be521315e82c56c84"
+        },
+        {
+          "id": "consensus",
+          "text": "a single weighted average consensus projection",
+          "locator": "Advanced DFS Projections > Consensus Projections",
+          "sha256": "bc8f21123479f884f5c3cc5c409615121e5f44c64d457cae98b70deda0c419fc"
+        },
+        {
+          "id": "sync",
+          "text": "If you generate lineups on your phone, they'll appear on your desktop or vice versa.",
+          "locator": "Apps = Continuity Between Mobile + Desktop",
+          "sha256": "a944d95d2d88157cf4fc7d3b6ac91952da944134dfd551ec96cf30da10bcb227"
+        },
+        {
+          "id": "patents",
+          "text": "9,751,010, 9,744,450, 10,478,721, 11,660,533",
+          "locator": "3rd Generation Patented LineUp Optimizer",
+          "sha256": "fd62bea921318dfb7c44f4b89966a20036dfbcb3f2b4127ce2d0fc1c15b73f2a"
+        },
+        {
+          "id": "export",
+          "text": "Export them! Just don't resell/use for commercial purposes.",
+          "locator": "Advanced DFS Projections > Exportable",
+          "sha256": "0b3ac64cd6ebbd2d8338f1446a42ada897e43a2592fb22020e58f698512f1535"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "DFS Projections",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/dfs-projections",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "No complete factor list, coefficients, training data, accuracy study, or feed contracts were established in the reviewed text. Embedded video failures were not treated as evidence.",
+      "excerpts": [
+        {
+          "id": "variables",
+          "text": "over 100+ distinct variables per athlete",
+          "locator": "How Do LineStar Projections Work?",
+          "sha256": "9fccf8c508cd0d43de062e0f78e54a360c5f7331d02c9f0df986557aedb0834f"
+        },
+        {
+          "id": "median",
+          "text": "DFS Projections are simply a expected median outcome",
+          "locator": "How Do LineStar Projections Work?",
+          "sha256": "1320b378a8ea5f7e29206ca14e5e6d262be849f2d59b273111ab591094add798"
+        },
+        {
+          "id": "updates",
+          "text": "weather updates, lineup alterations, and breaking news",
+          "locator": "How Do LineStar Projections Work?",
+          "sha256": "3171992f186c451e833bf3b81d1e576e817aeae2d7bf71ba3b80839908d29888"
+        },
+        {
+          "id": "human",
+          "text": "the projection is flagged and forwarded to a sport-specific expert for review",
+          "locator": "How Do LineStar Projections Work?",
+          "sha256": "5a70914d2365e0d24fc44f3c3a0a3a6b4673c412c408e8a2d868011f5eb3b35f"
+        },
+        {
+          "id": "edit",
+          "text": "You can input whatever you like for their projection",
+          "locator": "Modifying Projections with YOUR Projection",
+          "sha256": "35c2286a32f0b8cc0fe53f2832b1a401f2b853aa2b28efe41711bed0716cec4f"
+        },
+        {
+          "id": "import",
+          "text": "Map the correct columns.",
+          "locator": "How to Import Projections, step 3",
+          "sha256": "ece3231fe49f6a8b66f6bdc3ae6f7ce254baafd8d797f96a4cddc35b1a1be0af"
+        },
+        {
+          "id": "names",
+          "text": "Final step is to map any outlier names.",
+          "locator": "How to Import Projections, step 4",
+          "sha256": "61b7d0a8a09b94d634023796d731371a1bbd8e5c3fa1d8cff10fd3e7f8bf2a5e"
+        },
+        {
+          "id": "export",
+          "text": "It will automagically generate a CSV to download",
+          "locator": "How to Export Projections",
+          "sha256": "70c42cd5e8913ad88613c8b0db5be19ac1a4712f518f67e4859bb7a347be3492"
+        },
+        {
+          "id": "paid",
+          "text": "our own proprietary LineStar Projections and consensus projections which are included with your LineStar Premium Subscription",
+          "locator": "How to Import Projections > Q&A",
+          "sha256": "bdb9e4fb4fee74e01d87d80475f3b8deb0fb54d7e89bfce6bd0a70a03613f900"
+        },
+        {
+          "id": "selfhealing",
+          "text": "the system rechecks all variables",
+          "locator": "How do LineStar DFS Projections Compare to Competitors?",
+          "sha256": "bc6a87fcde8902e32d75cc1fad2ad6053609e24eb7a07d50710256581176bfe0"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "Lineup Optimizer",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/lineup-optimizer",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "No algorithm implementation was obtained. The cash-strategy heading says “Low Floor” while its sentence says “higher floor”; use the sentence as a vendor-described goal, not a validated strategy.",
+      "excerpts": [
+        {
+          "id": "models",
+          "text": "a mix of historical data, recent performances, and expected matchups",
+          "locator": "How Does The Lineup Optimizer Work?",
+          "sha256": "8e7b7fbb8c1154bc44c1e643108eb733fab8bafc216ac1b5ba0d2898094df82c"
+        },
+        {
+          "id": "platforms",
+          "text": "player salaries, positions, and contest rules for different DFS platforms like DraftKings, FanDuel, and Yahoo",
+          "locator": "How Does The Lineup Optimizer Work?",
+          "sha256": "d7fad766c5a22ce688bbf74a7f084ec115c3202e20a7bdef42786fe7e7a2f9aa"
+        },
+        {
+          "id": "locks",
+          "text": "locking in certain players they want to include, excluding players they want to avoid",
+          "locator": "How Does The Lineup Optimizer Work?",
+          "sha256": "50aa20b666968b8e3c4ab044b26c1f9537533d7e43dc19bb9dc336c3888610e0"
+        },
+        {
+          "id": "sets",
+          "text": "lineup sets of 150+ at a time",
+          "locator": "How Does The Lineup Optimizer Work?",
+          "sha256": "085ec7681ec495ddb7557909437d32fb4f18411b24dcf2e93aaf65943e87259e"
+        },
+        {
+          "id": "export",
+          "text": "directly EXPORT optimized lineups from LineStar into supported DFS platforms like DraftKings and FanDuel",
+          "locator": "How Does The Lineup Optimizer Work?",
+          "sha256": "9600625fbd9c041decd4b2eda5d46174370a7d54ab8dfe03e7fc6d3a27eb8616"
+        },
+        {
+          "id": "floor",
+          "text": "prioritize players with a higher floor",
+          "locator": "What are the Best Settings for the Optimizer?",
+          "sha256": "a427b27180936464571af1c2b0c0dbc50b22d5aeebc4aee60b3832ceb0d767d2"
+        },
+        {
+          "id": "ceiling",
+          "text": "favor players with higher ceilings",
+          "locator": "What are the Best Settings for the Optimizer?",
+          "sha256": "8a567e2e7c932856ee77e96dcd027178518ae10c52ba29e33b750105169664ea"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "Projected Ownership",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/projected-ownership",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Contest-population definition, training labels, model weights, and measured calibration remain unverified.",
+      "excerpts": [
+        {
+          "id": "factors",
+          "text": "player performance, matchups, injury reports, and player salaries",
+          "locator": "How Does LineStar's Projected Ownership Work?",
+          "sha256": "23ffd4c1418ffaef0f38817119f788c341c8b41163ca75dd523259ab0c986bec"
+        },
+        {
+          "id": "estimate",
+          "text": "estimate the percentage of fantasy teams that will have a particular player in their lineup",
+          "locator": "How Does LineStar's Projected Ownership Work?",
+          "sha256": "6123192931c8941590bb6dfe91804d82463e39a92f32b9b0e60ec190fc409866"
+        },
+        {
+          "id": "range",
+          "text": "think of Projected ownership as a range rather than an exact",
+          "locator": "How Does LineStar's Projected Ownership Work?",
+          "sha256": "ee7e19d97319d03931079085c07ae1587aabce4c8b2cefecb5e8a8564d3a4e24"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "Props AI",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/props-ai",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "The guide groups pick'em operators with sportsbooks and contains historical operator names. No current availability for a named operator is asserted here. A projection-to-line difference is not itself expected monetary value.",
+      "excerpts": [
+        {
+          "id": "lines",
+          "text": "Props AI collects player prop lines from top sportsbooks",
+          "locator": "How Does LineStar's Props AI Work? > Data Aggregation",
+          "sha256": "30a48fd3a25026856412821c65b876b73792ba5ac3241a4cf7123704ac096bcb"
+        },
+        {
+          "id": "evaluation",
+          "text": "expected value, trend direction, and likelihood of various outcomes",
+          "locator": "Prop Evaluation",
+          "sha256": "83cc283ca5853da279997ae9a26b8c4cf563c168619c31555c96cfd7ffa368ba"
+        },
+        {
+          "id": "history",
+          "text": "the last 5 games, 10 games, or the entire season",
+          "locator": "Performance History",
+          "sha256": "9e8bc14e14a89838bee88febce89bf93237bc728b647de0dd2054bd1e299abb8"
+        },
+        {
+          "id": "edge",
+          "text": "largest LineStar percentage difference to Over/Under Line",
+          "locator": "Props AI Terms > Edge %",
+          "sha256": "1a601c679cd71c3c5fd5ba4a5620b9069425e8254ba52cced69bf9d587de04eb"
+        },
+        {
+          "id": "filters",
+          "text": "create/save Prop Filters",
+          "locator": "Advanced Filtering in Props AI",
+          "sha256": "15ce83164d78a1467eb11a0765dd6e5b47f57bb72d147170dde9d4a40f45c770"
+        },
+        {
+          "id": "tracking",
+          "text": "track your prop picks without actually having to gamble",
+          "locator": "Tracking Your Picks in Props AI",
+          "sha256": "47d187ea4a95012ebc51ce4de8db9c79cc05ee57aad5f19cc974279531a6532d"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "Late Swap + Swaptimize",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/late-swap-+-swaptimize",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "This does not document autonomous submission to DFS operators. The project never submits contest entries.",
+      "excerpts": [
+        {
+          "id": "single",
+          "text": "This is an automated process, but you must select their replacement.",
+          "locator": "How To Use Late Swap & Swaptimize > Late Swap",
+          "sha256": "9326b0b778bea9bc2c2fd6caab8a9bf1e1ef166f2246a9ae7ae5e1794c49cde0"
+        },
+        {
+          "id": "sets",
+          "text": "rapidly swap MANY lineups at one time",
+          "locator": "How To Use Late Swap & Swaptimize > Swaptimize",
+          "sha256": "509eff8890de60b4f9069fea60cac70200a05727b15f2136724e939c402e08b8"
+        },
+        {
+          "id": "submit",
+          "text": "you must update your lineups on the DFS site you're playing on",
+          "locator": "Important notice",
+          "sha256": "ddea462b3ee7eb7fcf218729d314c130bfbca7e7f92c7ab1aabe9b32919f3788"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "Stacking",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/stacking",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "No correlation coefficients or portfolio objective are disclosed in the reviewed text. Examples are not evidence that a strategy is profitable.",
+      "excerpts": [
+        {
+          "id": "stack",
+          "text": "a list of potential stacks, ranked based on projected point totals and other key metrics",
+          "locator": "How Does LineStar's Stack Finder Work?",
+          "sha256": "2f5fc2cf53f25acca4ac039e0b38c32c19f689de8a983100b49ef6e9d192a97a"
+        },
+        {
+          "id": "choose",
+          "text": "The user can then choose which stacks they wish to incorporate into their lineups.",
+          "locator": "How Does LineStar's Stack Finder Work?",
+          "sha256": "6ef2f694c9b1b0b2eec5435d1abcf1b8c2afc9daf1a64cc084f1564c66e672b1"
+        },
+        {
+          "id": "correlation",
+          "text": "pairing a quarterback with his top wide receiver",
+          "locator": "Example",
+          "sha256": "ba7cbc7101d2980c82cc25b7cdd2a744dee16733b6c3b995d7df58a8fd1b93a5"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Sorting / Filtering",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/sorting-filtering",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "",
+      "excerpts": [
+        {
+          "id": "filter",
+          "text": "filter by slates, games, teams, positions, or player search",
+          "locator": "How Does LineStar's Advanced Sorting & Filtering Work?",
+          "sha256": "d62f9c52440b599216e19cb488939549a42f1b43c60456c037b3a0e7abac0ae3"
+        },
+        {
+          "id": "value",
+          "text": "projected points per $1,000 in salary",
+          "locator": "Customization",
+          "sha256": "0f042e470b56c5f675801041857e418e53d0264804fcd7df43d6f544844c451c"
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "Usage Matrix (NBA)",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/usage-matrix-nba",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "NBA-specific description. Do not extend this functionality to WNBA or college basketball without sport-specific evidence.",
+      "excerpts": [
+        {
+          "id": "scenario",
+          "text": "adjusting the injured player's minutes to zero",
+          "locator": "Example",
+          "sha256": "9dfa89f7c6d9db02e078f908053f0c34869adc8be480e3c4318937c8f9a127bd"
+        },
+        {
+          "id": "usage",
+          "text": "recalculate the usage rates for the remaining players",
+          "locator": "Example",
+          "sha256": "5af67c7f252582b0fe6a5f22d1858640efdb505162a87d37e6aa1ca1d15549dc"
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "Daily Matchups",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/daily-matchups",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Small-sample anecdotes are not out-of-sample validation. No causal or predictive benefit is assumed.",
+      "excerpts": [
+        {
+          "id": "splits",
+          "text": "batter vs. pitcher home runs, pitcher vs. batter's R/L split",
+          "locator": "How Does LineStar's Daily Matchup Tool Work?",
+          "sha256": "785ec555c5443713ac5f58b32b7920ee4744528db348c9bbddb2e5592dfeb08d"
+        },
+        {
+          "id": "receiver",
+          "text": "receiver vs. cornerback yards allowed in football",
+          "locator": "Stat-Specific Sorting",
+          "sha256": "451a3a297c54818079c76b6640706416568e89145d9fed206ba2d7cbc42f0b76"
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "Perfect Lineups",
+      "url": "https://linestar.gitbook.io/linestar-app/feature-guides/perfect-lineups",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "The guide advertises free access; exact present-day archive limits were not tested. Hindsight optima cannot measure a pre-game forecast's accuracy on their own.",
+      "excerpts": [
+        {
+          "id": "free",
+          "text": "a free look at historical perfect lineups",
+          "locator": "Opening paragraph",
+          "sha256": "1f363ab1dbfc483b5d9ac492f5475b4af82175283abf66a7d264f147df111ab8"
+        },
+        {
+          "id": "hindsight",
+          "text": "the highest possible points given the constraints of the salary cap and position requirements",
+          "locator": "How Does LineStar's Perfect Lineups Work?",
+          "sha256": "0c0f8e68d64f7da7da24259748e3c9e8645ceaf2285995cac6c72f5fd9eb66c7"
+        },
+        {
+          "id": "live",
+          "text": "both for HISTORICAL and LIVE games",
+          "locator": "How Does LineStar's Perfect Lineups Work?",
+          "sha256": "2ba78db2cd5550f456f4d5a7ffe1e6f1110c96a7e26f0b6794f753c4b7cfe621"
+        }
+      ]
+    },
+    {
+      "id": "S14",
+      "title": "Terms of Use",
+      "url": "https://www.linestarapp.com/Terms-of-Use",
+      "publisher": "BetFully, Inc.",
+      "kind": "Vendor legal terms",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Critical review gate: the page also contains a legacy Terms block dated June 10, 2022. No legal interpretation or clearance is claimed. No LineStar automated monitor, account probing, output ingestion, or paid-data collector is included.",
+      "excerpts": [
+        {
+          "id": "scraping",
+          "text": "No scraping or automated access",
+          "locator": "Section 10.1 heading",
+          "sha256": "516dbab9371dfb509a8bbbf91564a6e4570e023a201b8de61daa32285a986625"
+        },
+        {
+          "id": "reverse",
+          "text": "No reverse engineering",
+          "locator": "Section 10.3 heading",
+          "sha256": "77d17308e42629f65638fbb1e5f45b10ba106b32c09134c70888a5d981b81dc3"
+        },
+        {
+          "id": "training",
+          "text": "No AI/ML training or ingestion",
+          "locator": "Section 10.4 heading",
+          "sha256": "ca95a08c1b0d190136167a8f4d6b9134876b1fa4cc3efe5d30e2ad53f1a25433"
+        },
+        {
+          "id": "competitive",
+          "text": "No competitive use; no idea appropriation",
+          "locator": "Section 10.5 heading",
+          "sha256": "7bfe43cc951672d2f71ba8b1974f2ac3c400fa7c75464213ba043650011b70d1"
+        },
+        {
+          "id": "patents",
+          "text": "Nothing in these Terms grants you any license, immunity, covenant not to sue",
+          "locator": "Section 9.3",
+          "sha256": "a4624a2a594deb9d297f503fa0164f244a1f1e4f0ce32550549dec7a963ca766"
+        },
+        {
+          "id": "purchase",
+          "text": "Current pricing, billing periods, and included features are shown at the point of purchase",
+          "locator": "Section 7.1",
+          "sha256": "065c140ab8a26436bbe30745e4ffc97d0c74af5318ebf14e2a4c8296c87b645b"
+        },
+        {
+          "id": "licenses",
+          "text": "Only a signed written agreement from an authorized BetFully officer grants such rights",
+          "locator": "Section 10.9(d)",
+          "sha256": "1e7e140a43d77fca5b7eda871c890ba96668bdf6abfabfb6ce98565ca5eca1a4"
+        },
+        {
+          "id": "availability",
+          "text": "Data delivery may be delayed, incomplete, or interrupted",
+          "locator": "Section 5.3",
+          "sha256": "ef2f58567d8ec11afd6064323e3d435e542dd2366611d5dbe8d064562cc5bd26"
+        }
+      ]
+    },
+    {
+      "id": "S15",
+      "title": "LineStar for DK DFS — US App Store",
+      "url": "https://apps.apple.com/us/app/linestar-for-dk-dfs/id933568931",
+      "publisher": "BetFully listing on Apple App Store",
+      "kind": "Vendor app listing",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "US storefront, developer-written description. The web and app offer terms differ; listing includes legacy purchase SKUs. No reviews or wins are used as evidence of model accuracy.",
+      "excerpts": [
+        {
+          "id": "price",
+          "text": "$39.99/month w/3-day free trial",
+          "locator": "Description > Premium Subscriptions",
+          "sha256": "cc3b633fddcec629d31a52f6df9fab376aa5956af774e9743ac59264e46f5e4e"
+        },
+        {
+          "id": "annual",
+          "text": "$269.99/year",
+          "locator": "Description > Premium Subscriptions",
+          "sha256": "56c0004d388d775ff58f46cfaa6a159a5dc8df77d90952ab3bd19cf1b0b42364"
+        },
+        {
+          "id": "week",
+          "text": "$12.99/week",
+          "locator": "Description > Premium Subscriptions",
+          "sha256": "a46455f009e8ef70c653cf25be0290afa784434a1a5dc4a00f932540273f68b6"
+        },
+        {
+          "id": "sentiment",
+          "text": "FanSense™ Instantly gives you a feel for how other players feel about an athlete",
+          "locator": "Favorite Features",
+          "sha256": "e2588673c52c6fa12e95465d963f474249edb7376b604114d056bc938c79ebd0"
+        },
+        {
+          "id": "alerts",
+          "text": "Adverse weather alerts",
+          "locator": "Favorite Features",
+          "sha256": "795d81a4a6e54750443ae2254c2510c8eaa9ee1ce8610a3ae56e4b5c30aab2dd"
+        },
+        {
+          "id": "push",
+          "text": "push notifications giving critical game/player information",
+          "locator": "Favorite Features",
+          "sha256": "1dec9bd4ae8d3d3b0f10c8d480002fbdd7e8429092d154f654bd60ef17d7ad26"
+        },
+        {
+          "id": "graph",
+          "text": "an advanced graph of recent performance vs. our projections",
+          "locator": "Helpful Tips",
+          "sha256": "b07c3af6f150139a94e86692e6747f15e3c01d911ebecf5a2bb8ac6d7d5d66ee"
+        },
+        {
+          "id": "quick",
+          "text": "QuickGlance™ Icons help visualize player specific advice, trends, data",
+          "locator": "Favorite Features",
+          "sha256": "dc7a98ec41c1689549cf3d76c47c2a046986112cf62b9a80bf1ea1b75760da4c"
+        },
+        {
+          "id": "developer",
+          "text": "BetFully, Inc.",
+          "locator": "Developer label",
+          "sha256": "7a793a23aa0e60474c45006b57f6d932ba362f9a4a1dfed5b90ed8a9f124af16"
+        }
+      ]
+    },
+    {
+      "id": "S16",
+      "title": "nflverse data update and availability schedule",
+      "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
+      "publisher": "nflverse maintainers",
+      "kind": "Community-maintainer documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "First-party maintainer documentation, not NFL-operated. This is a published schedule, not a live SLA or a successful feed test. Feed-specific upstream rights and as-of timestamps still need review.",
+      "excerpts": [
+        {
+          "id": "stats",
+          "text": "on a nightly basis after each game day",
+          "locator": "nflverse Player and Team Stats",
+          "sha256": "4f584d493197ca668c72fb3a87f5953c3c8078ea1731ba12024a081dea60ceae"
+        },
+        {
+          "id": "corrections",
+          "text": "Thursday’s load_pbp() is the cleanest data we have.",
+          "locator": "nflverse Play-by-Play Data; inline code normalized",
+          "sha256": "c8b29ec93dbb03358f242c9ec8fceff6b41d7bdfa6ec85dcf092bda2763fd439"
+        },
+        {
+          "id": "participation",
+          "text": "It does not update during the season!",
+          "locator": "nflverse Participation Data",
+          "sha256": "ffda3503d44a86a03265f0c100634491b0c84591b59512442b3ed578e08db23e"
+        },
+        {
+          "id": "depth",
+          "text": "From 2025 onwards, depth charts are not assigned a week.",
+          "locator": "Depth Chart Data",
+          "sha256": "f7d37833e0f36ef12e65424cc66d2229d9ee5d2629f4e072574b4bd18a3c92f6"
+        },
+        {
+          "id": "injuries",
+          "text": "updates every day at 7AM UTC throughout the season",
+          "locator": "Injury Data",
+          "sha256": "cafdc83311597eb733c29b87b275f2ee3d783519c6414646f6850fd8cf2fcc58"
+        }
+      ]
+    },
+    {
+      "id": "S17",
+      "title": "nflverse-data repository and license",
+      "url": "https://github.com/nflverse/nflverse-data",
+      "publisher": "nflverse maintainers",
+      "kind": "Community-maintainer repository",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "Repository-level license is not proof that every upstream dataset has identical usage rights. No real athlete data from this repository is republished in this project.",
+      "excerpts": [
+        {
+          "id": "releases",
+          "text": "This repository holds automated data releases for nflverse projects",
+          "locator": "README > nflverse-data",
+          "sha256": "2e531d418e23e739aabb271eaebbc337b9359094d45473626c9a78c6cad8a40e"
+        },
+        {
+          "id": "license",
+          "text": "CC-BY-4.0 license",
+          "locator": "Repository license label; LICENSE.md also read through GitHub API",
+          "sha256": "45270e0524222d81b63038b39642438bb4db135b799947c4dd455188c5a4255e"
+        }
+      ]
+    },
+    {
+      "id": "S18",
+      "title": "Statcast Search CSV documentation",
+      "url": "https://baseballsavant.mlb.com/csv-docs",
+      "publisher": "MLB / Baseball Savant",
+      "kind": "League documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Documents fields, not a blanket data redistribution license or ingestion SLA. Do not assume pybaseball's code license licenses MLB data.",
+      "excerpts": [
+        {
+          "id": "csv",
+          "text": "This is the documentation for the Statcast Search CSV data downloads.",
+          "locator": "Statcast Search CSV Documentation",
+          "sha256": "52183bd51efd955f529d6a4d5a9b1a8831e456e94054cbc6d20c57bb737671f7"
+        },
+        {
+          "id": "pitch",
+          "text": "The type of pitch derived from Statcast.",
+          "locator": "pitch_type",
+          "sha256": "bb8f800224c9fc16eb5c7c2ba1125162b8dabe03c1f571f9e242a9346f91806e"
+        },
+        {
+          "id": "speed",
+          "text": "Pitch velocity in MPH.",
+          "locator": "release_speed",
+          "sha256": "411751b614bc60030cb2eecabb94d4255ad4d62c52e445015c4c21d16feb5365"
+        },
+        {
+          "id": "id",
+          "text": "MLB Player Id tied to the play event.",
+          "locator": "batter / pitcher",
+          "sha256": "67503e26a37668357f09d7424689a22e363a345d30abb63ca136a7254e333dd3"
+        }
+      ]
+    },
+    {
+      "id": "S19",
+      "title": "NBA statistical glossary",
+      "url": "https://www.nba.com/stats/help/glossary",
+      "publisher": "NBA",
+      "kind": "League documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Authoritative field definitions, not an unrestricted API contract. Production minute, usage, and lineup ingestion is not enabled.",
+      "excerpts": [
+        {
+          "id": "name",
+          "text": "Percent of Team's Field Goals Attempted",
+          "locator": "%FGA > Name",
+          "sha256": "449c4b0b136ade942415450fa3e9edc3c5f9d84facc29c18ad918ce83aecc8c3"
+        },
+        {
+          "id": "definition",
+          "text": "The percentage of a team's field goals attempted that a player has attempted while on the court",
+          "locator": "%FGA > Definition",
+          "sha256": "ea77664d55051a8a63ce43b792ae379a5bb2c5ce51c0cf76e34e414744d7fdcd"
+        }
+      ]
+    },
+    {
+      "id": "S20",
+      "title": "NBA injury report — 2025–26 season",
+      "url": "https://official.nba.com/nba-injury-report-2025-26-season/",
+      "publisher": "NBA",
+      "kind": "League documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Season-specific page, not proof of current 2026–27 reporting coverage. Public reports are not a guaranteed machine-readable injury API.",
+      "excerpts": [
+        {
+          "id": "injury",
+          "text": "NBA teams must report information concerning player injuries, illnesses, other medical conditions, or rest for all NBA games.",
+          "locator": "Reporting requirements",
+          "sha256": "f3b2f3ad7c20eba6f6aac6127acf0273acd88b4ab27cff04c8142852ea55e53e"
+        },
+        {
+          "id": "updates",
+          "text": "Reports are updated on a continual basis throughout the day.",
+          "locator": "Reporting requirements",
+          "sha256": "a6cda72d586bcddb20d86085c36e3101823e395d0c5fca896ae3a9c9aa380c7b"
+        }
+      ]
+    },
+    {
+      "id": "S21",
+      "title": "NWS API web service",
+      "url": "https://www.weather.gov/documentation/services-web-api",
+      "publisher": "US National Weather Service",
+      "kind": "Government documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "An independent candidate for weather data, not an identified LineStar supplier. Save issued-at forecasts for backtests, rather than substituting observed post-game weather.",
+      "excerpts": [
+        {
+          "id": "weather",
+          "text": "forecasts, alerts, and observations",
+          "locator": "Overview",
+          "sha256": "e16538bde43746fc0986f545ce2a1b408c0f747dc19245089541b1730c0d9f5b"
+        },
+        {
+          "id": "open",
+          "text": "open data, free to use for any purpose",
+          "locator": "Pricing",
+          "sha256": "f92c049da00eba426773939f41272d5f37f5fcb29fee4748ef02745e85b35993"
+        },
+        {
+          "id": "agent",
+          "text": "A User Agent is required to identify your application.",
+          "locator": "Authentication",
+          "sha256": "aef3da8f73e69cf0a18f56591448609b21f2592fc157c16d9b272f664a797326"
+        },
+        {
+          "id": "limits",
+          "text": "The rate limit is not public information",
+          "locator": "Pricing",
+          "sha256": "415f99d94e7617874e87721a798bdc9c99637cd05108ea747b3ae23e7019c4a6"
+        }
+      ]
+    },
+    {
+      "id": "S22",
+      "title": "Open-Meteo terms",
+      "url": "https://open-meteo.com/en/terms",
+      "publisher": "Open-Meteo",
+      "kind": "Provider legal terms",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Data licensing and hosted API access terms are separate. Commercial access is not assumed to be free.",
+      "excerpts": [
+        {
+          "id": "free",
+          "text": "You may only use the free API services for non-commercial purposes.",
+          "locator": "Non-Commercial Use",
+          "sha256": "a1bff2af83c24fbbfbe31824fb9416870228ca1f210b1363dbc2f4929d05a598"
+        },
+        {
+          "id": "limits",
+          "text": "Less than 10'000 API calls per day, 5'000 per hour and 600 per minute.",
+          "locator": "Non-Commercial Use",
+          "sha256": "c18d9a8c76178312f442338fb0ff29b73720781bab65272ede15e7769a053a94"
+        },
+        {
+          "id": "license",
+          "text": "CC-BY 4.0",
+          "locator": "Non-Commercial Use > licence",
+          "sha256": "090376c32b961b252c53f1ccd22580f6c3a1cbe5906dd556caa754110d4bc2f0"
+        }
+      ]
+    },
+    {
+      "id": "S23",
+      "title": "The Odds API — V4 guide",
+      "url": "https://the-odds-api.com/liveapi/guides/v4/",
+      "publisher": "The Odds API",
+      "kind": "Provider documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Candidate only. No account/key or real-feed test. Per-market, per-sport, historical, and redistribution entitlements must be confirmed; a free tier is not presumed sufficient.",
+      "excerpts": [
+        {
+          "id": "key",
+          "text": "Get an API key via email",
+          "locator": "Overview, step 1",
+          "sha256": "23133032ad431342647a108c90c6d2f9f15304b306ffec899d11e854a014c096"
+        },
+        {
+          "id": "sports",
+          "text": "Returns a list of in-season sport objects.",
+          "locator": "GET sports",
+          "sha256": "334565ede0c2d301cbc2cafa47957d4a51354ef2c90c06b43e90d76ba2c4e7a7"
+        },
+        {
+          "id": "subscription",
+          "text": "The API key associated with your subscription.",
+          "locator": "GET sports > apiKey",
+          "sha256": "7297177e95049e7fdb828215227669f7f6b2b54b324442824dadebb8f379394c"
+        }
+      ]
+    },
+    {
+      "id": "S24",
+      "title": "SportsDataIO NFL API documentation",
+      "url": "https://sportsdata.io/developers/api-documentation/nfl",
+      "publisher": "SportsDataIO",
+      "kind": "Provider documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Potential licensed provider, NOT an identified supplier to LineStar. A coverage menu is not a guarantee of field depth or a license for every league. Trial data and stale template examples need validation before model use.",
+      "excerpts": [
+        {
+          "id": "key",
+          "text": "All of our API endpoints can be accessed via an HTTP GET request using your API key.",
+          "locator": "Introduction; inline code normalized",
+          "sha256": "afa3e16d85ac3102e506489aacf2ee934bea197503b70c4a4eed57aaae61bfcc"
+        },
+        {
+          "id": "subscription",
+          "text": "Subscription Required",
+          "locator": "Endpoint query parameter > key",
+          "sha256": "505c21bdae450cd5163db538ce9cd26c9b5b0c26e6c7c2b62aef8c89f09c1da7"
+        },
+        {
+          "id": "salary",
+          "text": "SportsDataIO's proprietary projections, including DFS salary information and injuries",
+          "locator": "Projected Player Game Stats - by Team",
+          "sha256": "22ce3e93be7641a30028db5ec5f940dfe14faefa0b478b9456078a04e7deeb59"
+        },
+        {
+          "id": "coverage",
+          "text": "NFL MLB NBA NHL College Football College Basketball Golf NASCAR Soccer MMA WNBA",
+          "locator": "Navigation > Coverage; adjacent labels, whitespace normalized",
+          "sha256": "11ff8e7b4649a4380407e9baa419860904f3cec332a8e4c84fdeaacc12467770"
+        }
+      ]
+    },
+    {
+      "id": "S25",
+      "title": "Sports Reference bot traffic policy",
+      "url": "https://www.sports-reference.com/bot-traffic.html",
+      "publisher": "Sports Reference",
+      "kind": "Provider policy",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Rate limits are not permission to reuse or redistribute data. The earlier suggestion to rely on broad scraper libraries has been removed.",
+      "excerpts": [
+        {
+          "id": "thirdparty",
+          "text": "Most of our data comes from third parties who sell the data to us.",
+          "locator": "Why Not Provide an API?",
+          "sha256": "6c9c686b95ebbee3f351a196280f9c53885f1be8f35c1b59e4e00ab57ffad81c"
+        },
+        {
+          "id": "download",
+          "text": "we can not provide the data available as a download on our site",
+          "locator": "Why Not Provide an API?",
+          "sha256": "c3535fb5c32388074bd8bcd270e6c5894360eaece2f736ee70600e794c571f0b"
+        }
+      ]
+    },
+    {
+      "id": "S26",
+      "title": "Riot League of Legends developer policy",
+      "url": "https://developer.riotgames.com/docs/lol",
+      "publisher": "Riot Games",
+      "kind": "Publisher documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Do not assume the general player API provides licensed professional-esports DFS data. Betting-related use needs a separately appropriate source and rights review.",
+      "excerpts": [
+        {
+          "id": "gambling",
+          "text": "Your product cannot feature betting or gambling functionality.",
+          "locator": "Monetization",
+          "sha256": "930819c1f528231adb46d3872e1962113adf7dc1580190941d00cd684b1cbb53"
+        },
+        {
+          "id": "key",
+          "text": "Your API key may not be included in your code",
+          "locator": "Security",
+          "sha256": "c65c127e5867d96f8748051071d1dbeace8a087aa6bb41fbbb6890f5eb952f8f"
+        }
+      ]
+    },
+    {
+      "id": "S27",
+      "title": "Patent Public Search",
+      "url": "https://www.uspto.gov/patents/search/patent-public-search",
+      "publisher": "US Patent and Trademark Office",
+      "kind": "Government documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "Official route for manual patent and ownership review. No claim construction, enforceability, ownership-chain verification, or freedom-to-operate opinion was performed.",
+      "excerpts": [
+        {
+          "id": "assignments",
+          "text": "To find patent assignments and changes in ownership, visit Patent Assignment Search.",
+          "locator": "Additional resources; link markup removed",
+          "sha256": "9d10fdcb5e9d53a98e7e156a9aaea0f6e14204482de68bd7206978398edb5c09"
+        }
+      ]
+    },
+    {
+      "id": "S28",
+      "title": "What is GitHub Pages?",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "publisher": "GitHub",
+      "kind": "Platform documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "The site and browser demo are static. Scheduled workflows are not a live sports backend and are not a latency guarantee.",
+      "excerpts": [
+        {
+          "id": "static",
+          "text": "GitHub Pages is a static site hosting service",
+          "locator": "About GitHub Pages",
+          "sha256": "2ab3085bd760d87f38a79817f66047d961733bbc1f1c788426db567aa9605dfc"
+        },
+        {
+          "id": "files",
+          "text": "HTML, CSS, and JavaScript files straight from a repository on GitHub",
+          "locator": "About GitHub Pages",
+          "sha256": "56d5a6a50446cd9dd8ef4e1c8bd8a12b908598c4d4d6b946bc7f565aea75392b"
+        }
+      ]
+    },
+    {
+      "id": "S29",
+      "title": "nba_api maintainer repository",
+      "url": "https://github.com/swar/nba_api",
+      "publisher": "nba_api maintainers",
+      "kind": "Community-maintainer repository",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": true,
+      "notes": "Third-party client, not an official NBA data license. No current endpoint availability, entitlement, or SLA is asserted.",
+      "excerpts": [
+        {
+          "id": "client",
+          "text": "An API Client package to access the APIs for NBA.com",
+          "locator": "Repository description",
+          "sha256": "ff6b942829c00e4960f7d306fda30222b8e6c10688ffc464f18f05ada892e375"
+        }
+      ]
+    },
+    {
+      "id": "S30",
+      "title": "Public documentation index",
+      "url": "https://linestar.gitbook.io/linestar-app/llms.txt",
+      "publisher": "LineStar-branded documentation",
+      "kind": "Vendor documentation",
+      "observedOn": "2026-09-22",
+      "method": "Public page text reviewed with fetch_page; short excerpts only, not a complete page archive.",
+      "monitor": false,
+      "notes": "Used as a public document index, not to infer undisclosed controls or paid access. No scheduled crawling of LineStar or its documentation is enabled.",
+      "excerpts": [
+        {
+          "id": "chat",
+          "text": "Live Chat on the LineStar App is a real-time communication feature that allows users to connect with fellow DFS players and experts.",
+          "locator": "Live Chat entry",
+          "sha256": "9721d820d6b8f72393a67adc057ce2385d02cbc269c2845702d0efb092e25c64"
+        },
+        {
+          "id": "advanced",
+          "text": "Master Correlation, Leverage, and Range of Outcomes!",
+          "locator": "Advanced Concepts DFS Strategy entry",
+          "sha256": "6d29000f74c0475eef224d7e14a7598e7c8e7f7670f11cddd22140651511e1a7"
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "F01",
+      "title": "Player projections",
+      "category": "Projections",
+      "claim": "LineStar describes per-athlete DFS projections as an expected median outcome.",
+      "evidence": ["S04:median"],
+      "scope": "Sport and slate dependent",
+      "access": "Premium documented",
+      "accessEvidence": ["S04:paid"],
+      "implementation": "Prototype",
+      "plan": "Independent recency-weighted mean of synthetic historical fantasy points. This is not a reconstruction of the vendor model.",
+      "caveat": "A mean is not a median; no measured accuracy parity.",
+      "inputs": ["Point-in-time game outcomes", "Sport / operator scoring version"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F02",
+      "title": "Consensus projections",
+      "category": "Projections",
+      "claim": "LineStar describes a weighted average of industry projections.",
+      "evidence": ["S03:consensus"],
+      "scope": "Provider selection not disclosed",
+      "access": "Premium documented",
+      "accessEvidence": ["S04:paid"],
+      "implementation": "Blocked",
+      "plan": "Blend only independently built or explicitly licensed forecasts after out-of-sample weight selection.",
+      "caveat": "Contributors, weights, and reuse rights are not established.",
+      "inputs": ["Licensed forecast sources", "As-of timestamps"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F03",
+      "title": "Changing conditions & expert review",
+      "category": "Projections",
+      "claim": "The guide describes updates for weather, lineup changes, and news, with sport-specific expert review of anomalous projections.",
+      "evidence": ["S04:updates", "S04:human"],
+      "scope": "Sport dependent",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Fixture quality checks fail closed for stale or invalid data; no automatic human override.",
+      "caveat": "Autonomous operation cannot silently reproduce the vendor’s expert judgment.",
+      "inputs": ["Injury / lineup / weather events", "Quality thresholds"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F04",
+      "title": "Editable projections",
+      "category": "Projections",
+      "claim": "Users can replace a player projection.",
+      "evidence": ["S04:edit"],
+      "scope": "Projection page",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Version and audit overrides; defaults must not require manual entry.",
+      "caveat": "Not implemented in the public demo; no UI suggests a user override is a trained model.",
+      "inputs": ["Versioned overrides"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F05",
+      "title": "Projection CSV import / export",
+      "category": "Projections",
+      "claim": "The guide describes CSV export and import requiring column mapping and outlier-name resolution.",
+      "evidence": ["S04:import", "S04:names", "S04:export"],
+      "scope": "Selected provider / slate",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Export our synthetic projections and lineups in a project-specific CSV format.",
+      "caveat": "Import and operator-compatible upload formats are not implemented. Automatic name matching was overstated in the old repo.",
+      "inputs": ["Canonical player IDs", "Schema mapping"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F06",
+      "title": "Sorting, filtering & value",
+      "category": "Projections",
+      "claim": "The guide documents slate, game, team and position filters and projected points per $1,000 in salary.",
+      "evidence": ["S10:filter", "S10:value"],
+      "scope": "Projection page",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Projection lab supports position filtering and sorting by points, value, and salary.",
+      "caveat": "Salary is synthetic. Value is not expected return.",
+      "inputs": ["Projection", "Salary", "Position"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F07",
+      "title": "Performance history",
+      "category": "Projections",
+      "claim": "The app listing describes graphs comparing recent performance with projections.",
+      "evidence": ["S15:graph"],
+      "scope": "Mobile listing",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Display a deterministic walk-forward fixture evaluation with timestamps and error metrics.",
+      "caveat": "Synthetic error metrics test software, not real predictive performance.",
+      "inputs": ["Historical forecasts", "Final outcomes"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F08",
+      "title": "Lineup optimization",
+      "category": "Optimizer",
+      "claim": "The guide describes using projections with platform-specific salaries, positions, and contest rules.",
+      "evidence": ["S05:platforms"],
+      "scope": "DraftKings / FanDuel / Yahoo described",
+      "access": "Premium documented",
+      "accessEvidence": ["S02:premium"],
+      "implementation": "Prototype",
+      "plan": "Exact small-pool search maximizes summed independent means under the demo roster constraints.",
+      "caveat": "Demo roster is a project specification, not an audited operator integration. Patents still require counsel.",
+      "inputs": ["Eligible slate pool", "Salary cap", "Roster rules"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F09",
+      "title": "Lock / exclude players",
+      "category": "Optimizer",
+      "claim": "The guide documents locking chosen players and excluding unwanted players.",
+      "evidence": ["S05:locks"],
+      "scope": "Optimizer",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Library enforces explicit slot locks and excluded IDs; late-swap scenario exercises slot preservation.",
+      "caveat": "Library controls are tested; the UI presents fixed scenarios rather than every control.",
+      "inputs": ["Canonical IDs", "Saved roster slots"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F10",
+      "title": "Multiple lineups & export",
+      "category": "Optimizer",
+      "claim": "The guide advertises sets of 150+ lineups and export to supported operators.",
+      "evidence": ["S05:sets", "S05:export"],
+      "scope": "Optimizer",
+      "access": "Premium documented",
+      "accessEvidence": ["S02:premium"],
+      "implementation": "Prototype",
+      "plan": "Generate up to three distinct fixture lineups, export project CSV.",
+      "caveat": "Small-pool prototype is not a 150-lineup production solver or an operator submission tool.",
+      "inputs": ["Slate pool", "Diversity rules"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F11",
+      "title": "Stack Finder",
+      "category": "Optimizer",
+      "claim": "The guide describes ranked potential stacks that users can select for optimization.",
+      "evidence": ["S09:stack", "S09:choose"],
+      "scope": "Sport dependent",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "An optional same-team QB + WR/TE constraint is implemented.",
+      "caveat": "A stack constraint is not a fitted joint-outcome model or a profit guarantee.",
+      "inputs": ["Team / position IDs", "Correlation model (future)"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F12",
+      "title": "Exposure & budget controls",
+      "category": "Optimizer",
+      "claim": "The pricing page advertises exposures and budget management.",
+      "evidence": ["S02:exposures"],
+      "scope": "Advanced settings",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Library enforces salary limits and requested-set maximum exposure counts, rejecting incomplete portfolios.",
+      "caveat": "Greedy sequential lineup selection is not a globally optimal portfolio. Exact vendor cap semantics not inspected.",
+      "inputs": ["Portfolio size", "Exposure caps"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F13",
+      "title": "Late swap & set re-optimization",
+      "category": "Optimizer",
+      "claim": "The guide separates individual replacement selection from bulk set re-optimization, and says operator entries must also be updated.",
+      "evidence": ["S08:single", "S08:sets", "S08:submit"],
+      "scope": "Late-swap eligible contests",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Freeze started-game players in their exact slots and exclude newly locked additions.",
+      "caveat": "No operator submission. Eligibility depends on contest rules and trustworthy lock times.",
+      "inputs": ["Existing entries", "Actual / scheduled start times"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F14",
+      "title": "Projected ownership",
+      "category": "Research",
+      "claim": "LineStar describes estimating the share of fantasy teams rostering a player using performance, matchups, injuries and salary.",
+      "evidence": ["S06:estimate", "S06:factors"],
+      "scope": "Contest definition not established",
+      "access": "Premium documented",
+      "accessEvidence": ["S02:premium"],
+      "implementation": "Blocked",
+      "plan": "Train on licensed, contest-specific realized ownership with temporal holdouts.",
+      "caveat": "No ownership numbers are fabricated. Training set and calibration are unknown.",
+      "inputs": ["Historical contest ownership", "Contest population"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F15",
+      "title": "Perfect Lineups",
+      "category": "Research",
+      "claim": "The guide describes hindsight salary-and-position-constrained optimal lineups and advertises a free historical view.",
+      "evidence": ["S13:free", "S13:hindsight"],
+      "scope": "Historical / live; archive depth untested",
+      "access": "Free described",
+      "accessEvidence": ["S13:free"],
+      "implementation": "Planned",
+      "plan": "Compute a hindsight upper bound from licensed settled results, separately from predictive backtests.",
+      "caveat": "Do not use the hindsight optimum as an achievable historical strategy.",
+      "inputs": ["Settled outcomes", "Historical slate rules"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F16",
+      "title": "Salary comparison",
+      "category": "Research",
+      "claim": "Public navigation lists a DraftKings-versus-FanDuel salary comparison.",
+      "evidence": ["S01:salaries"],
+      "scope": "Observed NFL navigation",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Join licensed salaries by canonical ID, accounting for different budgets and scoring.",
+      "caveat": "A link does not prove cross-platform field quality or access.",
+      "inputs": ["Operator slates", "ID crosswalks"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F17",
+      "title": "Salary changes",
+      "category": "Research",
+      "claim": "Public navigation lists daily salary moves.",
+      "evidence": ["S01:changes"],
+      "scope": "Observed NFL navigation",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Compare versioned snapshots within a consistent provider and contest type.",
+      "caveat": "Do not mix differently scoped slates.",
+      "inputs": ["Salary snapshots"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F18",
+      "title": "Touchdown report",
+      "category": "Research",
+      "claim": "Public NFL navigation lists TD scoring trends.",
+      "evidence": ["S01:td"],
+      "scope": "NFL navigation only",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Model touchdown counts / probabilities from role and opportunity data after calibration.",
+      "caveat": "No extension to college or Canadian football is established.",
+      "inputs": ["Opportunity", "Red-zone events"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F19",
+      "title": "Snap counts",
+      "category": "Research",
+      "claim": "Public NFL navigation lists a snap-count tool.",
+      "evidence": ["S01:snaps"],
+      "scope": "NFL navigation only",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Derive role shares from licensed participation data with availability timestamps.",
+      "caveat": "Data publication schedules must be checked, not assumed live.",
+      "inputs": ["Offensive / defensive snaps"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F20",
+      "title": "Red-zone usage",
+      "category": "Research",
+      "claim": "Public NFL navigation lists red-zone usage.",
+      "evidence": ["S01:redzone"],
+      "scope": "NFL navigation only",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Version a red-zone definition and aggregate plays before the prediction cutoff.",
+      "caveat": "Definition and exact vendor calculations are not disclosed by a menu label.",
+      "inputs": ["Field position", "Targets / carries"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F21",
+      "title": "Matchups & positional defense",
+      "category": "Research",
+      "claim": "Public navigation lists matchup breakdowns and defense-versus-position; the guide gives batter/pitcher and receiver/corner examples.",
+      "evidence": ["S01:matchups", "S01:defense", "S12:splits", "S12:receiver"],
+      "scope": "NFL / NBA navigation; MLB guide",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Use regularized, time-safe opponent adjustments and report sample sizes.",
+      "caveat": "Small head-to-head samples do not establish predictive value.",
+      "inputs": ["Opponent IDs", "Usage-adjusted outcomes"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F22",
+      "title": "NBA Usage Matrix / court scenarios",
+      "category": "Research",
+      "claim": "The NBA guide describes changing a player’s minutes and recalculating remaining-player usage; pricing mentions a Court Simulator.",
+      "evidence": ["S11:scenario", "S11:usage", "S02:court"],
+      "scope": "NBA only in reviewed evidence",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Model team-minute conservation and role redistribution with lineup availability.",
+      "caveat": "Do not claim the same feature for WNBA or NCAAB.",
+      "inputs": ["Minutes", "On/off possessions", "Rotation data"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F23",
+      "title": "MLB Dinger Report",
+      "category": "Research",
+      "claim": "The pricing comparison lists a Daily Dinger Report for MLB home-run predictions.",
+      "evidence": ["S02:dingers"],
+      "scope": "MLB",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Build a separately calibrated home-run probability model using authorized pitch and plate-appearance data.",
+      "caveat": "The advertised result is not evidence of discrimination or calibration.",
+      "inputs": ["Batter / pitcher", "Park", "Weather"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F24",
+      "title": "Best Ball rankings & ADP",
+      "category": "Research",
+      "claim": "The public NFL menu lists rankings, ADP and draft tools.",
+      "evidence": ["S01:bestball"],
+      "scope": "NFL observed; other sports unverified",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Blocked",
+      "plan": "Acquire authorized ADP snapshots and define season-long scoring and roster rules.",
+      "caveat": "The earlier MLB scope and 2025 date were not substantiated.",
+      "inputs": ["Draft observations", "Season simulations"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F25",
+      "title": "Prop analysis",
+      "category": "Props",
+      "claim": "Props AI documentation describes prop-line collection and evaluation with expected-value and outcome-likelihood fields.",
+      "evidence": ["S07:lines", "S07:evaluation"],
+      "scope": "Operators / markets vary",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Prototype",
+      "plan": "Demonstrate unit-stake EV arithmetic from explicitly assumed probabilities and odds.",
+      "caveat": "No calibrated prop probabilities or real prices; not a Props AI replica.",
+      "inputs": ["Win / push probability", "Decimal odds", "Settlement rules"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F26",
+      "title": "Prop history, filters & pick tracking",
+      "category": "Props",
+      "claim": "The guide describes 5-game / 10-game / season histories, saved filters and tracking without wagering.",
+      "evidence": ["S07:history", "S07:filters", "S07:tracking"],
+      "scope": "Props AI guide",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Store authorized historical market snapshots and immutable paper-pick decisions.",
+      "caveat": "Replaying today’s line over historical games is descriptive, not a valid historical betting backtest.",
+      "inputs": ["Market timestamps", "Settlement results"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F27",
+      "title": "Starting lineups",
+      "category": "Live & content",
+      "claim": "The public menu labels a confirmed-lineups dashboard.",
+      "evidence": ["S01:lineups"],
+      "scope": "Observed NFL / NBA navigation",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Blocked",
+      "plan": "Use licensed confirmation events with provenance and a freshness deadline.",
+      "caveat": "A roster or depth chart is not a confirmed starting lineup.",
+      "inputs": ["Confirmed status events"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F28",
+      "title": "Live scoring",
+      "category": "Live & content",
+      "claim": "The public menu lists live contest scoring.",
+      "evidence": ["S01:live"],
+      "scope": "Observed NFL / NBA navigation",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Blocked",
+      "plan": "Reconcile authorized live events with versioned scoring and corrections.",
+      "caveat": "Static Pages has no continuously running feed backend.",
+      "inputs": ["Licensed live feed", "Scoring rules"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F29",
+      "title": "Projection update log",
+      "category": "Live & content",
+      "claim": "The public menu describes a what-changed-and-why projection view.",
+      "evidence": ["S01:updates"],
+      "scope": "Observed NFL / NBA navigation",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Publish model version, input timestamps and reason codes for every recomputation.",
+      "caveat": "A menu description does not identify triggers or latency.",
+      "inputs": ["Immutable forecast revisions"],
+      "kind": "Observed navigation"
+    },
+    {
+      "id": "F30",
+      "title": "News & strategy articles",
+      "category": "Live & content",
+      "claim": "The navigation lists player news and strategy; pricing describes expert, beat-reporter and team sources.",
+      "evidence": ["S01:news", "S01:articles", "S02:news"],
+      "scope": "Observed NFL navigation / pricing",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Blocked",
+      "plan": "License news inputs; link to originals rather than republishing reporting.",
+      "caveat": "No supplier, social-scraping rights, or measured sentiment edge established.",
+      "inputs": ["Authorized news", "Source timestamps"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F31",
+      "title": "Community chat",
+      "category": "Live & content",
+      "claim": "The public documentation index describes real-time conversation with DFS players and experts.",
+      "evidence": ["S30:chat"],
+      "scope": "LineStar community",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "A separate moderated discussion feature could be built; no data is copied.",
+      "caveat": "Not equivalent to FanSense sentiment or expert editorial coverage.",
+      "inputs": ["User consent", "Moderation"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F32",
+      "title": "Social sentiment / FanSense",
+      "category": "Live & content",
+      "claim": "The app listing describes a view of how other users feel about an athlete.",
+      "evidence": ["S15:sentiment"],
+      "scope": "Mobile listing",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Blocked",
+      "plan": "Any future sentiment feature must collect first-party consented feedback.",
+      "caveat": "Community opinions are not ground-truth ownership and cannot be recreated without a community.",
+      "inputs": ["Consented first-party feedback"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F33",
+      "title": "Weather & player alerts",
+      "category": "Live & content",
+      "claim": "The app listing advertises weather alerts, contextual icons and critical game/player push notifications.",
+      "evidence": ["S15:alerts", "S15:quick", "S15:push"],
+      "scope": "Mobile listing",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Generate rule-based alerts from authorized status / weather data; keep delivery separate from the model.",
+      "caveat": "No response-time guarantee. Native push is not in this static prototype.",
+      "inputs": ["Status changes", "Weather forecasts", "Notification consent"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F34",
+      "title": "Mobile / desktop continuity",
+      "category": "Platform",
+      "claim": "The feature guide says lineups sync between the same account’s mobile and desktop clients.",
+      "evidence": ["S03:sync"],
+      "scope": "Web + mobile",
+      "access": "Premium documented",
+      "accessEvidence": ["S02:premium"],
+      "implementation": "Planned",
+      "plan": "The site is responsive; future account-backed state sync requires a backend.",
+      "caveat": "Responsive design does not implement native apps or cloud synchronization.",
+      "inputs": ["Identity", "Versioned saved lineups"],
+      "kind": "Vendor-described"
+    },
+    {
+      "id": "F35",
+      "title": "Advanced group / bring-back controls",
+      "category": "Optimizer",
+      "claim": "The old repository asserted exact group-count and bring-back controls; these details were not confirmed in the reviewed evidence.",
+      "evidence": [],
+      "scope": "Not established",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Treat generic group constraints and opponent bring-backs as our own proposed requirements, not verified vendor features.",
+      "caveat": "Keep unverified until a permitted primary description supports each control.",
+      "inputs": ["Group definitions", "Game / team relationships"],
+      "kind": "Unverified"
+    },
+    {
+      "id": "F36",
+      "title": "Cash / tournament strategy settings",
+      "category": "Optimizer",
+      "claim": "The guide describes higher-floor cash-game preferences and higher-ceiling tournament preferences.",
+      "evidence": ["S05:floor", "S05:ceiling"],
+      "scope": "Vendor strategy guidance",
+      "access": "Not verified",
+      "accessEvidence": [],
+      "implementation": "Planned",
+      "plan": "Evaluate full outcome distributions and contest payouts; do not equate a heuristic score with expected profit.",
+      "caveat": "The old projection × (1 − ownership) objective had no validation.",
+      "inputs": ["Joint outcome distributions", "Contest payouts / fees"],
+      "kind": "Vendor-described"
+    }
+  ],
+  "findings": [
+    {
+      "id": "C01",
+      "title": "13 labels, not 13 proven live feeds",
+      "claim": "The public sport switcher lists 13 labels; the pricing comparison groups coverage into 12 sports. Treat these as different groupings, not evidence that every sport has every tool.",
+      "evidence": ["S01:sports", "S02:sports12"],
+      "kind": "Observed text"
+    },
+    {
+      "id": "C02",
+      "title": "An advertised factor count is not an open model",
+      "claim": "LineStar describes over 100 variables per athlete. The reviewed materials do not establish a complete factor list, coefficients, training procedure, supplier roster, or measured accuracy.",
+      "evidence": ["S04:variables"],
+      "kind": "Vendor claim / bounded unknown"
+    },
+    {
+      "id": "C03",
+      "title": "Web offer: $39.99 monthly / $239.99 annual",
+      "claim": "These amounts appear on the public web pricing page. They are a dated observation of advertised pricing, not a checkout quote.",
+      "evidence": ["S02:webprice", "S14:purchase"],
+      "kind": "Dated offer"
+    },
+    {
+      "id": "C04",
+      "title": "US app description: $269.99 annual",
+      "claim": "The DraftKings app description advertises $12.99 weekly, $39.99 monthly with a 3-day trial, and $269.99 annually. The annual amount differs from the web offer; the cause is unverified.",
+      "evidence": ["S15:week", "S15:price", "S15:annual"],
+      "kind": "Conflicting offers"
+    },
+    {
+      "id": "C05",
+      "title": "Paid inclusion is not proof of exclusive access",
+      "claim": "Premium inclusion is described, but every individual access boundary was not tested. Perfect Lineups explicitly advertises a free historical view. No account or paid data was used.",
+      "evidence": ["S02:premium", "S04:paid", "S13:free"],
+      "kind": "Access caveat"
+    },
+    {
+      "id": "C06",
+      "title": "Do not harvest or imitate protected outputs",
+      "claim": "The published terms restrict automated access, reverse engineering, AI/ML ingestion and competitive use. Keep LineStar outputs out of training, validation and redistribution; obtain a written license or qualified legal review before expanding this research.",
+      "evidence": [
+        "S14:scraping",
+        "S14:reverse",
+        "S14:training",
+        "S14:competitive",
+        "S14:licenses"
+      ],
+      "kind": "Critical restriction"
+    },
+    {
+      "id": "C07",
+      "title": "Four patent numbers are vendor-listed",
+      "claim": "The documentation lists US 9,751,010; 9,744,450; 10,478,721; and 11,660,533. This review does not establish current ownership, enforceability, claim scope, or freedom to operate. Independent implementation alone is not legal clearance.",
+      "evidence": ["S03:patents", "S14:patents", "S27:assignments"],
+      "kind": "Legal review required"
+    },
+    {
+      "id": "C08",
+      "title": "“Self-healing” does not establish auto-retraining",
+      "claim": "The projection guide describes rechecking variables and expert intervention. It does not document a reproducible nightly retraining algorithm in the material reviewed.",
+      "evidence": ["S04:selfhealing", "S04:human"],
+      "kind": "Vendor claim / bounded unknown"
+    },
+    {
+      "id": "C09",
+      "title": "Projection edge is not monetary expected value",
+      "claim": "The Props AI guide defines Edge % as a percentage difference from a line. Our EV calculator separately needs a win probability, push probability and payout; a positive projection difference alone is insufficient.",
+      "evidence": ["S07:edge"],
+      "kind": "Definition + project mathematics"
+    },
+    {
+      "id": "C10",
+      "title": "Alternative vendors are candidates, not LineStar suppliers",
+      "claim": "NWS, nflverse, The Odds API and SportsDataIO have relevant public documentation. Nothing in the reviewed evidence identifies them as LineStar suppliers or establishes matching coverage, latency, or data rights.",
+      "evidence": ["S21:weather", "S17:releases", "S23:key", "S24:key"],
+      "kind": "Project sourcing proposal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "D01",
+      "title": "Historical outcomes & player identity",
+      "need": "Time-stamped game stats; canonical player/team IDs; corrections; playing time and role.",
+      "vendor": "LineStar describes history and recent performance; specific feeds are not established.",
+      "evidence": ["S03:inputs", "S05:models"],
+      "candidates": ["S16", "S17", "S18", "S24"],
+      "automation": "Historical NFL is the proposed first integration. No real-data adapter is enabled.",
+      "gate": "Audit upstream rights, season coverage, duplicates, corrections, and publication time. Public code is not a data license."
+    },
+    {
+      "id": "D02",
+      "title": "Minutes, snaps, opportunities & matchups",
+      "need": "Pre-lock role estimates; pace / possessions; snap and red-zone opportunities; opponents and venue.",
+      "vendor": "The public tools describe snaps, red-zone usage, NBA usage scenarios and matchups.",
+      "evidence": ["S01:snaps", "S01:redzone", "S11:usage", "S12:splits"],
+      "candidates": ["S16", "S18", "S19", "S24"],
+      "automation": "Compute sport-specific derived features only after approved ingestion.",
+      "gate": "nflverse participation has end-of-season availability. Do not leak it into in-season historical predictions."
+    },
+    {
+      "id": "D03",
+      "title": "Injury & confirmed-lineup events",
+      "need": "Event time, publication time, participation status, source, starting status, and confidence.",
+      "vendor": "LineStar describes injury-related updates and a confirmed-lineup dashboard.",
+      "evidence": ["S04:updates", "S01:lineups"],
+      "candidates": ["S16", "S20", "S24"],
+      "automation": "Blocked pending a reliable rights-approved current-season feed.",
+      "gate": "Depth charts, rosters and news are not interchangeable with confirmed lineups; stale status blocks publication."
+    },
+    {
+      "id": "D04",
+      "title": "DFS salaries, eligibility & contest rules",
+      "need": "Operator slate ID, player ID, roster position, salary, lock time, scoring version and cancellations.",
+      "vendor": "The optimizer guide describes salaries, positions and platform constraints.",
+      "evidence": ["S05:platforms"],
+      "candidates": ["S24"],
+      "automation": "Fixture-only today; no lobby scraping or user-upload dependency.",
+      "gate": "Secure automated licensed salary access; confirm operator rules and redistribution rights. Library rules are not official eligibility."
+    },
+    {
+      "id": "D05",
+      "title": "Game odds & prop markets",
+      "need": "Book, market, side, line, odds format, timestamp, settlement rules and archival snapshots.",
+      "vendor": "Pricing mentions totals / implied team points; Props AI describes line collection.",
+      "evidence": ["S02:odds", "S07:lines"],
+      "candidates": ["S23", "S24"],
+      "automation": "Blocked until API credentials and required market entitlements exist.",
+      "gate": "API keys stay server-side. Coverage, rate limits and historical rights need account-level verification; no free-parity assumption."
+    },
+    {
+      "id": "D06",
+      "title": "Weather & venue context",
+      "need": "Coordinates, roof state, issued-at forecast, valid-at time, temperature, wind and precipitation.",
+      "vendor": "Vendor documentation lists weather among projection inputs.",
+      "evidence": ["S03:inputs"],
+      "candidates": ["S21", "S22"],
+      "automation": "NWS is a documented independent candidate; no stadium mapping or live forecast adapter yet.",
+      "gate": "Archive forecasts available before lock, not future observations. Open-Meteo hosted free API is non-commercial only."
+    },
+    {
+      "id": "D07",
+      "title": "Ownership & contest population",
+      "need": "Realized player ownership tied to contest type, field size, slate, entry limits and lock time.",
+      "vendor": "LineStar describes a predictive ownership model with performance / matchup / injury / salary inputs.",
+      "evidence": ["S06:factors", "S06:estimate"],
+      "candidates": ["S24"],
+      "automation": "No training labels secured; no fabricated proxy percentages.",
+      "gate": "Vendor projected ownership is not ground truth. Obtain authorized realized contest observations and define the target population."
+    },
+    {
+      "id": "D08",
+      "title": "News, sentiment & consensus",
+      "need": "Licensed text or metadata, publication timestamps, consented feedback, and authorized forecasts.",
+      "vendor": "Vendor pages describe reporting, community sentiment and aggregated projections.",
+      "evidence": ["S02:news", "S15:sentiment", "S03:consensus"],
+      "candidates": [],
+      "automation": "Blocked. No source with suitable rights has been established for this project.",
+      "gate": "No scraping competitor projections or beat-writer posts, and no assumption of positive predictive benefit."
+    },
+    {
+      "id": "D09",
+      "title": "Live events & settlement",
+      "need": "Event sequence IDs, source timestamps, corrections, sport rules, finalized outcomes and audit log.",
+      "vendor": "Navigation advertises live scoring; terms warn of possible delays and interruptions.",
+      "evidence": ["S01:live", "S14:availability"],
+      "candidates": ["S24"],
+      "automation": "Requires a backend / event queue beyond static hosting.",
+      "gate": "Measure actual end-to-end latency. Never imply a free feed is always minutes slower or that any paid feed is infallible."
+    }
+  ],
+  "sports": [
+    {
+      "label": "NFL",
+      "evidence": ["S01:sports"],
+      "proposal": "Proposed first real-data pilot: opportunity, role and fantasy-point baselines.",
+      "candidates": ["S16", "S17", "S24"],
+      "gate": "Licensed slate / injury inputs and time-safe history remain missing.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "NBA",
+      "evidence": ["S01:sports"],
+      "proposal": "Minutes × per-minute production, rotation and possession context.",
+      "candidates": ["S19", "S20", "S24", "S29"],
+      "gate": "Official definitions are available; production data rights and current-season status ingestion are not approved.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "MLB",
+      "evidence": ["S01:sports"],
+      "proposal": "Plate appearances / innings, handedness and park / weather context.",
+      "candidates": ["S18", "S24"],
+      "gate": "Statcast fields are documented; data access terms and archival coverage still need review.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "NHL",
+      "evidence": ["S01:sports"],
+      "proposal": "Time on ice, lines, power play and goalie participation.",
+      "candidates": ["S24"],
+      "gate": "Provider lists NHL; required field coverage and license not verified.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "WNBA",
+      "evidence": ["S01:sports"],
+      "proposal": "Minutes, role and pace with a separate league model.",
+      "candidates": ["S24"],
+      "gate": "Provider lists WNBA; do not inherit NBA feature availability or model quality.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "PGA",
+      "evidence": ["S01:sports"],
+      "proposal": "Round / hole outcomes, field strength and tournament format.",
+      "candidates": ["S24"],
+      "gate": "Provider lists Golf; specific tours, fantasy fields and rights not verified.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "UFC",
+      "evidence": ["S01:sports"],
+      "proposal": "Bout outcomes, pace and scoring-event distributions.",
+      "candidates": ["S24"],
+      "gate": "Provider lists MMA; exact UFC coverage and scoring access not verified.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "NAS",
+      "evidence": ["S01:sports"],
+      "proposal": "Race context, starting position, laps and finish distribution.",
+      "candidates": ["S24"],
+      "gate": "Provider lists NASCAR; race-series field depth and licensing not verified.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "NCAAF",
+      "evidence": ["S01:sports"],
+      "proposal": "Team pace and player opportunities with roster churn.",
+      "candidates": ["S24"],
+      "gate": "Provider lists College Football; historical identity and completeness need audit.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "NCAAB",
+      "evidence": ["S01:sports"],
+      "proposal": "Minutes, possession rates and rotations.",
+      "candidates": ["S24"],
+      "gate": "Provider lists College Basketball; no NBA Usage Matrix parity established.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "CFL",
+      "evidence": ["S01:sports"],
+      "proposal": "League-specific rules and opportunity model.",
+      "candidates": [],
+      "gate": "No rights-approved, machine-readable source verified in this pass.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "LOL",
+      "evidence": ["S01:sports"],
+      "proposal": "Professional match / map / roster model, not general player matchmaking.",
+      "candidates": ["S26"],
+      "gate": "Riot general developer policy restricts gambling functionality; no suitable esports DFS feed licensed.",
+      "status": "Not integrated"
+    },
+    {
+      "label": "CSGO",
+      "evidence": ["S01:sports"],
+      "proposal": "Versioned game / tournament / map scope, before modeling.",
+      "candidates": [],
+      "gate": "This is the observed legacy label; no inference of current CS2 coverage and no approved source.",
+      "status": "Not integrated"
+    }
+  ],
+  "flags": [
+    {
+      "id": "R01",
+      "severity": "Critical",
+      "title": "Rights and patent clearance",
+      "detail": "Published terms restrict the requested reverse-engineering / competitive use. No authorization to harvest paid data or use outputs for model development was obtained.",
+      "action": "Keep vendor-data ingestion disabled. Obtain qualified counsel / appropriate written permissions before expanding beyond this public-description review.",
+      "evidence": ["S14:scraping", "S14:training", "S14:competitive", "S14:patents"]
+    },
+    {
+      "id": "R02",
+      "severity": "Critical",
+      "title": "No measured quality parity",
+      "detail": "No real sports dataset, licensed comparator, or held-out sports accuracy measurement is delivered. The demo is entirely synthetic.",
+      "action": "Start an independently sourced, point-in-time NFL pilot and define evaluation before tuning. Never market parity until measured under an authorized comparison protocol.",
+      "evidence": []
+    },
+    {
+      "id": "R03",
+      "severity": "High",
+      "title": "Paid access was overstated",
+      "detail": "The old repo asserted specific paid-only boundaries, including historical Perfect Lineup archives beyond a preview, without per-feature evidence.",
+      "action": "Use per-feature access status; the guide explicitly describes free historical viewing, with current depth still unknown.",
+      "evidence": ["S13:free"]
+    },
+    {
+      "id": "R04",
+      "severity": "High",
+      "title": "Pricing and trial discrepancy",
+      "detail": "Web annual pricing is $239.99; the US DK app description says $269.99 annually and a 3-day monthly trial.",
+      "action": "Treat prices as channel-specific dated observations. Do not assert one universal annual price or trial.",
+      "evidence": ["S02:webprice", "S15:annual", "S15:price"]
+    },
+    {
+      "id": "R05",
+      "severity": "High",
+      "title": "A fully autonomous replica is not established",
+      "detail": "The projection guide documents human expert review; late-swap guidance requires user/operator actions.",
+      "action": "Our pipeline quarantines anomalies and never silently guesses or submits entries.",
+      "evidence": ["S04:human", "S08:single", "S08:submit"]
+    },
+    {
+      "id": "R06",
+      "severity": "High",
+      "title": "Unknown hidden methods and suppliers",
+      "detail": "No full 100-factor list, learned weights, complete feeds or current service-level targets were established.",
+      "action": "Label only broad documented inputs; remove guessed supplier identities and performance claims.",
+      "evidence": ["S04:variables", "S03:inputs"]
+    },
+    {
+      "id": "R07",
+      "severity": "High",
+      "title": "As-of leakage and stale data",
+      "detail": "Historical corrections, late publication and post-season data can make a backtest look better than live use.",
+      "action": "Store event time and availability time; reject unknown/stale status. Participation data is an explicit availability warning.",
+      "evidence": ["S16:participation", "S16:depth", "S16:corrections"]
+    },
+    {
+      "id": "R08",
+      "severity": "High",
+      "title": "Source code licenses are not data rights",
+      "detail": "Community API clients and public tables do not establish bulk retrieval or redistribution rights.",
+      "action": "Audit licenses dataset-by-dataset; do not use undocumented ESPN endpoints or Sports Reference scrapers as verified official APIs.",
+      "evidence": ["S17:license", "S25:thirdparty", "S25:download", "S29:client"]
+    },
+    {
+      "id": "R09",
+      "severity": "Medium",
+      "title": "Sport labels and tool scope",
+      "detail": "13 menu labels differ from the 12-sport marketing grouping. Several old claims extended NFL/NBA tools to other leagues.",
+      "action": "Keep observed labels and explicit scope. Treat active slates and CSGO/CS2 mapping as unverified.",
+      "evidence": ["S01:sports", "S02:sports12", "S11:usage"]
+    },
+    {
+      "id": "R10",
+      "severity": "High",
+      "title": "EV and tournament objectives were incorrect",
+      "detail": "The old plan used mean-versus-line gaps as +EV and projection × (1 − ownership) as a tournament objective without validation.",
+      "action": "Use calibrated outcome probabilities, payouts, push/void rules, joint distributions and fees; the demo only verifies arithmetic.",
+      "evidence": ["S07:edge"]
+    },
+    {
+      "id": "R11",
+      "severity": "Medium",
+      "title": "Hosted weather API has restrictions",
+      "detail": "Open-Meteo’s free hosted API is non-commercial and rate-limited.",
+      "action": "Choose a permitted plan/source before commercial use; keep forecast issue times.",
+      "evidence": ["S22:free", "S22:limits", "S21:open"]
+    },
+    {
+      "id": "R12",
+      "severity": "High",
+      "title": "Static hosting is not a live feed service",
+      "detail": "GitHub Pages hosts static assets. No server-side secret storage, low-latency streaming or sports backend is delivered.",
+      "action": "Use Pages for documentation / demo. Add an authorized backend with freshness monitoring before live projections.",
+      "evidence": ["S28:static"]
+    },
+    {
+      "id": "R13",
+      "severity": "Medium",
+      "title": "Document and link quality",
+      "detail": "The review encountered soft-404 provider URLs, broken embedded videos, old terms text alongside numbered terms, and dated documentation. In this sandbox, direct Node rechecks of six allowlisted references failed at the network layer; separate public-text research retrieval succeeded.",
+      "action": "Use the successful canonical source links and the separate availability report. A network failure does not establish that a source is down, and reachability is not semantic verification. Keep observation and recheck dates separate.",
+      "evidence": []
+    },
+    {
+      "id": "R14",
+      "severity": "Medium",
+      "title": "Pages administration unavailable",
+      "detail": "The GitHub integration returned HTTP 403 when asked to switch Pages from main:/ to main:/docs.",
+      "action": "Generated root and docs entrypoints support the existing main:/ configuration; no settings change is required for this release.",
+      "evidence": []
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "N01",
+      "priority": "P0",
+      "title": "Resolve rights and define a single-sport contract",
+      "session": "Next session",
+      "status": "Blocked on authorization",
+      "tasks": [
+        "Review vendor restrictions and patent claims with qualified counsel; do not assume independent code grants clearance.",
+        "Select NFL as a proposed pilot and obtain automated salary / eligibility / status feed rights.",
+        "Create a dataset-specific rights manifest including storage, derived-use and redistribution permissions."
+      ],
+      "done": "Documented rights for every required field, approved endpoints, and a negative test proving unauthorized sources cannot be ingested.",
+      "refs": ["S14", "S17", "S24", "S27"]
+    },
+    {
+      "id": "N02",
+      "priority": "P0",
+      "title": "Build authorized ingestion, IDs and quality gates",
+      "session": "Next session, after N01",
+      "status": "Not started",
+      "tasks": [
+        "Use stable athlete / team / slate IDs and store event time, available-at time, source, license, schema and payload hash.",
+        "Add retry/backoff, bounded downloads, rate limits, timezone handling, duplicate checks and correction history.",
+        "Quarantine missing, conflicting, stale or out-of-range critical inputs; never substitute synthetic data into a live output."
+      ],
+      "done": "Replayable licensed historical snapshots plus tests for renamed players, trades, postponements, partial feeds and late scratches.",
+      "refs": ["S16", "S20", "S21"]
+    },
+    {
+      "id": "N03",
+      "priority": "P1",
+      "title": "Measure a real baseline before adding complexity",
+      "session": "Following session",
+      "status": "Not started",
+      "tasks": [
+        "Freeze train/validation/test dates; fit role × rate models only on information available before the prediction cutoff.",
+        "Report MAE / RMSE for point means, quantile loss / interval coverage for ranges, calibration / log loss for prop probabilities.",
+        "Compare to naïve historical baselines by sport, position and news regime; report sample sizes and uncertainty.",
+        "Only promote a model after a preregistered improvement criterion on held-out data; retain rollback artifacts."
+      ],
+      "done": "Reproducible real-data evaluation, no leakage, versioned scoring including nonlinear bonuses, and no profitability or vendor-parity claims without evidence.",
+      "refs": []
+    },
+    {
+      "id": "N04",
+      "priority": "P1",
+      "title": "Production optimizer and contest integrations",
+      "session": "Following session, after N02–N03",
+      "status": "Prototype only",
+      "tasks": [
+        "Replace bounded enumeration with an audited scalable solver when needed; version each operator’s exact roster and scoring rules.",
+        "Add explicit group and bring-back rules, minimum exposure feasibility and portfolio simulation.",
+        "Verify locked slots, canceled / early-start games, ties, rounding, CSV formats and operator permissions without automatic contest submission."
+      ],
+      "done": "Independent solver oracle tests, feasibility reports and operator-rule fixtures. Any legal clearance remains separate from solver correctness.",
+      "refs": ["S27"]
+    },
+    {
+      "id": "N05",
+      "priority": "P1",
+      "title": "Ownership and props only with suitable targets",
+      "session": "Following session",
+      "status": "Blocked on labels and market rights",
+      "tasks": [
+        "License contest-specific ownership labels; fit bounded / calibrated predictions without treating vendor projections as truth.",
+        "Archive authorized lines at decision time; model pushes, voids, fees and correlated multi-leg payouts.",
+        "Keep raw projection gaps, probabilities and monetary EV as separate displayed quantities."
+      ],
+      "done": "Time-split calibration reports with explicit populations, sample sizes and entitlement checks.",
+      "refs": ["S23", "S24"]
+    },
+    {
+      "id": "N06",
+      "priority": "P2",
+      "title": "Expand coverage and operational delivery",
+      "session": "Later, after a successful pilot",
+      "status": "Not started",
+      "tasks": [
+        "Validate each sport separately; do not assume NFL quality transfers to NBA, MLB, college sports or esports.",
+        "Add a backend, server-side secret manager, status monitoring and an incident / stale-data publication policy.",
+        "Revisit public feature descriptions only under a permitted review process; preserve dates and unresolved discrepancies."
+      ],
+      "done": "Rights-approved coverage matrix and measured reliability targets, not a blanket “all sports / no manual work” promise.",
+      "refs": ["S26", "S28"]
+    }
+  ]
+}

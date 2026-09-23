@@ -1,0 +1,27 @@
+{
+  "name": "lstarengy-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-led sports projection research and an independent synthetic-data prototype",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm test && npm run validate && npm run build -- --check",
+    "demo": "node scripts/demo.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test:browser": "playwright test",
+    "sources:check": "node scripts/check-sources.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.63.0",
+    "prettier": "3.9.8"
+  }
+}

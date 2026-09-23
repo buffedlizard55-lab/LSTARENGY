@@ -1,0 +1,627 @@
+{
+  "baseCommit": "0ac0b07a4c19105b6b952b3ef7943fd2a02bc56b",
+  "reviewedOn": "2026-09-22",
+  "scope": "Every substantive legacy claim or claim group is covered below. Ranges refer to the original commit, not generated files. HTML/CSS presentation-only lines do not require external fact verification. “Not inspected” is not a finding that a source is false.",
+  "entries": [
+    {
+      "file": "docs/index.html",
+      "start": 8,
+      "end": 8,
+      "subject": "Reverse-engineered system description",
+      "disposition": "Reworded",
+      "review": "Public-description research is not a recovered projection system.",
+      "evidence": [],
+      "originalLineSha256": "6d200eb2018f31417d49a61979aea2cf557b1be9ccef6b46bd5ba27486bef06e"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 33,
+      "end": 37,
+      "subject": "Clean-room / operator / universal verification",
+      "disposition": "Narrowed",
+      "review": "Retain BetFully developer attribution; remove unverified LLC corporate history and any guarantee that every prior claim was verified.",
+      "evidence": ["S15:developer"],
+      "originalLineSha256": "732fdfd080e47f3739dcd6f224387cdc03ddc5c1362c18bcdce4a952c8ab7585"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 40,
+      "end": 46,
+      "subject": "13 sports and 100+ factors",
+      "disposition": "Narrowed",
+      "review": "13 observed menu labels; 100+ variables is a vendor claim, not independently validated feature engineering.",
+      "evidence": ["S01:sports", "S04:variables"],
+      "originalLineSha256": "4ec7602052cbd3d5c3937879edee2663468c0c103b5b5513d0cb1715d4513a88"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 48,
+      "end": 50,
+      "subject": "Monthly price",
+      "disposition": "Retained with date",
+      "review": "Displayed web offer; not a checkout quote.",
+      "evidence": ["S02:webprice"],
+      "originalLineSha256": "c1f0040858ba28edf1d9a478fe5266109fa15776dbe7fb5a9756a4db4f2a8f98"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 60,
+      "end": 64,
+      "subject": "Paid main tools, consensus, Props AI, Best Ball",
+      "disposition": "Split into atomic entries",
+      "review": "Projection/consensus premium inclusion supported. Do not assume exact access for every tool or MLB Best Ball scope/date.",
+      "evidence": ["S04:paid", "S03:consensus", "S07:edge", "S01:bestball"],
+      "originalLineSha256": "f6fa8c5dfada7417a4f5871c4aa67040b0b193095bc6f8a1e5cae6cff74cfda2"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 70,
+      "end": 77,
+      "subject": "NFL / NCAAF / CFL report scope",
+      "disposition": "Narrowed",
+      "review": "Document only observed NFL menu tools; no unsupported cross-league inheritance.",
+      "evidence": ["S01:td", "S01:snaps", "S01:redzone", "S01:defense"],
+      "originalLineSha256": "a520e7afb1d041e054b5e67739158455a48a6cb5ee08d7bf65df920ad5223361"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 80,
+      "end": 85,
+      "subject": "NBA / WNBA / NCAAB usage matrix scope",
+      "disposition": "Narrowed",
+      "review": "NBA guide supports usage scenarios; no extension to other basketball leagues.",
+      "evidence": ["S11:usage"],
+      "originalLineSha256": "7286c72e48f1870fd2701fd56704fce558099e5be66c6afa5823c55264caa50f"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 86,
+      "end": 90,
+      "subject": "MLB Dingers / matchups",
+      "disposition": "Retained with evidence",
+      "review": "A pricing-page feature label and a guide support these descriptions, not their predictive quality.",
+      "evidence": ["S02:dingers", "S12:splits"],
+      "originalLineSha256": "67270fb6c71638254377e68d079d4eeb2749fc9098f4dd96607d218253e8720f"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 95,
+      "end": 95,
+      "subject": "Projected ownership",
+      "disposition": "Narrowed",
+      "review": "Describe target estimate and documented inputs, not demonstrated GPP advantage.",
+      "evidence": ["S06:estimate", "S06:factors"],
+      "originalLineSha256": "b4031cfd479421abb0efdeebe6e2dc6852588953d7b37111e1beadc1af5347cc"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 96,
+      "end": 96,
+      "subject": "Perfect lineups for backtesting",
+      "disposition": "Corrected",
+      "review": "Hindsight optimal outcome is an upper bound, not a predictive strategy backtest. Free historical view advertised.",
+      "evidence": ["S13:hindsight", "S13:free"],
+      "originalLineSha256": "6998411343c5ce3988ea335727171fc483e27cf70a8c5983e119132367896d8c"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 97,
+      "end": 98,
+      "subject": "Salary comparison / changes",
+      "disposition": "Retained as labels",
+      "review": "Public navigation only; exact output and access not tested.",
+      "evidence": ["S01:salaries", "S01:changes"],
+      "originalLineSha256": "5f08acb5e98a2fdf2c9bc04d1d23a09a46a15e40de821a24f472d3281d925ff5"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 103,
+      "end": 105,
+      "subject": "Confirmed lineups, live scoring and update reasons",
+      "disposition": "Narrowed",
+      "review": "Retain menu descriptions; remove unsupported latency and precise-trigger guarantees.",
+      "evidence": ["S01:lineups", "S01:live", "S01:updates"],
+      "originalLineSha256": "b59aa77bc6abcbb03483d24cee8ba056e38581498de21911b0495a9439af0346"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 110,
+      "end": 112,
+      "subject": "News, articles, community chat / FanSense",
+      "disposition": "Corrected",
+      "review": "Chat and crowd sentiment are distinct features; no unsupported detailed feed taxonomy.",
+      "evidence": ["S01:news", "S01:articles", "S30:chat", "S15:sentiment"],
+      "originalLineSha256": "337eefdfa4e632c95b9de418caa4f325ef5f1f94817ab19cb1d669ab69612392"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 117,
+      "end": 118,
+      "subject": "150+ lineups and three platforms",
+      "disposition": "Retained as vendor description",
+      "review": "Neither performance nor current contest coverage tested.",
+      "evidence": ["S05:sets", "S05:platforms"],
+      "originalLineSha256": "dfd4ff7fb5c84ae709a65c1a8d6b73a12ac6d3f4d3759e36f1b2768b51338c7a"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 119,
+      "end": 121,
+      "subject": "Stacking, bring-backs, exact groups, exposure caps",
+      "disposition": "Split supported / unknown",
+      "review": "Stacking and exposures supported broadly. Exact group cardinalities, bring-back and per-position cap controls not verified.",
+      "evidence": ["S09:stack", "S02:exposures"],
+      "originalLineSha256": "181403bc135f190f39cac15beb630d7bc66cd6ac8e5a2aca79a986f8ce081cd8"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 122,
+      "end": 122,
+      "subject": "Late swap",
+      "disposition": "Corrected",
+      "review": "Separate individual replacement from bulk Swaptimize; entries must be updated at operator.",
+      "evidence": ["S08:single", "S08:sets", "S08:submit"],
+      "originalLineSha256": "b92df65cfab07cfe6a53afd6b12b53a285e200dd10015b874d82971af1a1a630"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 123,
+      "end": 124,
+      "subject": "CSV and automatic column detection",
+      "disposition": "Corrected",
+      "review": "Export supported; import guide requires column and outlier-name mapping, not guaranteed auto-detection.",
+      "evidence": ["S05:export", "S04:import", "S04:names"],
+      "originalLineSha256": "0d25a4560b5fe7421502c0a681272594655d56ef9323fcebaa4a5e7036fab78a"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 130,
+      "end": 146,
+      "subject": "Sports covered list",
+      "disposition": "Narrowed",
+      "review": "Observed labels only. Do not infer current activity, all-tool availability, or CS2 mapping.",
+      "evidence": ["S01:sports"],
+      "originalLineSha256": "3457d8da8ca9dec0c9eb57c068431779dfe5bfdf31f38e2ce255aa4621eddce6"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 151,
+      "end": 152,
+      "subject": "Every detailed input explicitly documented",
+      "disposition": "Removed blanket claim",
+      "review": "Separate vendor-described input categories from our own proposed features and candidate sources.",
+      "evidence": [],
+      "originalLineSha256": "421c84b4e1ac7007bb7e0db817c15d8975023f7a96257f762e7130a1fc829d53"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 159,
+      "end": 166,
+      "subject": "Detailed history / matchup inputs",
+      "disposition": "Narrowed",
+      "review": "Only broad documented categories attributed to vendor. Additional rates and splits are design proposals.",
+      "evidence": ["S03:inputs", "S12:splits"],
+      "originalLineSha256": "e8c5e20eb500185c859d5a6380d51ddda53005e821c3cff789c0f9167c22f5d3"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 161,
+      "end": 161,
+      "subject": "Sports Reference and clients as free alternatives",
+      "disposition": "Corrected",
+      "review": "Maintainer software is not a league-operated API or a blanket data license.",
+      "evidence": ["S25:thirdparty", "S29:client"],
+      "originalLineSha256": "b0307c5be847a0ad878416938aa6ae3f94a84d27062aaaac0f11d083e3bb8bc4"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 166,
+      "end": 166,
+      "subject": "Statcast / NBA clients",
+      "disposition": "Narrowed",
+      "review": "Official Statcast field definitions and NBA glossary linked; client/data rights separated.",
+      "evidence": ["S18:csv", "S19:definition"],
+      "originalLineSha256": "ca510c5c1adf8b81d369298cb221e4be7992402bd250d0954310030d6de63608"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 170,
+      "end": 171,
+      "subject": "Odds and ESPN endpoints as free source",
+      "disposition": "Corrected",
+      "review": "No unsupported ESPN endpoint contract. The Odds API requires an API key; entitlements unverified.",
+      "evidence": ["S23:key"],
+      "originalLineSha256": "a04e6e9ec57b32363360d1795bceb269e1ad7eb005e7caf31a99bd9a8a96bb63"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 175,
+      "end": 176,
+      "subject": "Weather inputs / free access",
+      "disposition": "Corrected",
+      "review": "Weather category supported. NWS documented; Open-Meteo hosted free access is non-commercial only.",
+      "evidence": ["S03:inputs", "S21:open", "S22:free"],
+      "originalLineSha256": "12aa0c4c731003cfb01b1d58ada3cf7b0f0b4ba8748062b834dae3061b192937"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 179,
+      "end": 186,
+      "subject": "Injury and starting-lineup feeds",
+      "disposition": "Narrowed",
+      "review": "No claim that depth charts / rosters provide confirmed starters or that all league APIs exist.",
+      "evidence": ["S20:injury", "S01:lineups"],
+      "originalLineSha256": "0fbc997539f59e4792fb96a6c87a7e4847c2dc7bd86c1598223f2bae362116b1"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 189,
+      "end": 191,
+      "subject": "Salary scraping recommendation",
+      "disposition": "Removed",
+      "review": "No operator lobby scraper or automated protected access; require authorized feed.",
+      "evidence": ["S24:key", "S24:subscription"],
+      "originalLineSha256": "dc7c8e9faa48adca2f69b39db58ea2a7ffc8fa3adc3200bf84a9ea6a9314a31a"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 194,
+      "end": 196,
+      "subject": "Ownership model inputs / labels",
+      "disposition": "Corrected",
+      "review": "Keep only documented input categories. No assumed social or public-winner training dataset.",
+      "evidence": ["S06:factors"],
+      "originalLineSha256": "40bf9220149cabc1473dca11f033e3e4d13c23f5d3925b8e8f5d93a87f8a93ae"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 199,
+      "end": 201,
+      "subject": "News / sentiment feeds",
+      "disposition": "Narrowed",
+      "review": "Beat/team sources described; specific tweet, locker-room and NLP claims not established.",
+      "evidence": ["S02:news"],
+      "originalLineSha256": "93908b0e72d0270ae3baee752ef0cb7ca37d5ee77602ae4de8b428ddb80395b2"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 204,
+      "end": 206,
+      "subject": "Consensus providers and free picks",
+      "disposition": "Corrected",
+      "review": "Weighted average documented; constituent providers/weights and reuse rights unknown.",
+      "evidence": ["S03:consensus"],
+      "originalLineSha256": "e32fccbebe2e7492c617431886329e87ea056773d539efe427b6846e5d494e1f"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 216,
+      "end": 217,
+      "subject": "Publicly stated algorithm",
+      "disposition": "Reworded",
+      "review": "No full reproducible algorithm obtained; distinguish marketing description from project design.",
+      "evidence": [],
+      "originalLineSha256": "a9a96eb5017c4ef14e861947097e444d207d395cbee8aee2162c93b16ec0a86e"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 219,
+      "end": 219,
+      "subject": "Base statistical model",
+      "disposition": "Retained as vendor description",
+      "review": "History/recent form/matchups described, not model parameters.",
+      "evidence": ["S05:models"],
+      "originalLineSha256": "8262b2a28aa49147b158c0e590e7c707d2758703bd387fda670f596f83a68b4c"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 220,
+      "end": 221,
+      "subject": "100 modifiers and real-time reruns",
+      "disposition": "Narrowed",
+      "review": "Count is a vendor claim; documented changing conditions and human review added. No latency measured.",
+      "evidence": ["S04:variables", "S04:updates", "S04:human"],
+      "originalLineSha256": "8d9b427ae4613925f57cde60129747fdbfc71cac89796ee79ae0269ee4a9a21c"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 222,
+      "end": 222,
+      "subject": "Consensus reduces model risk",
+      "disposition": "Narrowed",
+      "review": "Document averaging; no independently measured bias / error reduction.",
+      "evidence": ["S03:consensus"],
+      "originalLineSha256": "dc745a6445935cd954ccf3cbd29f4f3f658a2a391f669f212820242bc8ce8ae8"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 223,
+      "end": 223,
+      "subject": "Vendor uses integer / knapsack optimization",
+      "disposition": "Removed as vendor fact",
+      "review": "Optimization is a generic project choice. Vendor implementation was not established.",
+      "evidence": ["S05:platforms"],
+      "originalLineSha256": "cff54d23a091141475c626a556e5a4d7c64ac6f75e62992427a1bb0e080fc009"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 226,
+      "end": 244,
+      "subject": "Patents / titles / core claims / continuation",
+      "disposition": "Narrowed",
+      "review": "Keep only vendor-listed patent numbers. Remove unverified titles, lineage and claim-scope paraphrases; link USPTO review route.",
+      "evidence": ["S03:patents", "S27:assignments"],
+      "originalLineSha256": "9eae857885677c8d8cde9f099700a1dbf400518c770c273a6265a2a696eef46a"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 248,
+      "end": 252,
+      "subject": "Standard algorithms generally non-infringing",
+      "disposition": "Removed unsafe assurance",
+      "review": "Independent implementation and standard methods do not establish freedom to operate; counsel required.",
+      "evidence": ["S14:patents"],
+      "originalLineSha256": "5f0775f29a5d94a92497f1903b8a532f25effdd47f37df56f52446affe3d2268"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 259,
+      "end": 279,
+      "subject": "Universal premium price and inclusions",
+      "disposition": "Corrected",
+      "review": "Separate web vs US app price, dated offer vs checkout, inclusion vs exclusive paid access.",
+      "evidence": ["S02:webprice", "S15:annual", "S14:purchase", "S02:premium"],
+      "originalLineSha256": "cdc6438e6831b2fdfa7e06dab1d4db4fd99bc6cd024bcab7a47a44b0b883e9da"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 284,
+      "end": 295,
+      "subject": "List of no-free-public-access components",
+      "disposition": "Corrected",
+      "review": "Per-feature access status; Perfect Lineups advertises free historical access. Many exact boundaries remain unknown.",
+      "evidence": ["S13:free", "S04:paid"],
+      "originalLineSha256": "ddf56de36a3f5fe3bec9766211434d543d7348ed6c9c8aed69cb974c2f5f87a1"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 302,
+      "end": 302,
+      "subject": "Only public / licensed sources",
+      "disposition": "Removed guarantee",
+      "review": "No rights manifest existed. Proposed candidates are not approved licensed integrations.",
+      "evidence": [],
+      "originalLineSha256": "bfc24d7bf4772ea9aebe30dcf3cd5304155a6e61eec1a62b436c38a45bd3a350"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 304,
+      "end": 316,
+      "subject": "Automatic data-pipeline plan",
+      "disposition": "Replaced",
+      "review": "No unsupported scraper APIs, lobby scraping or unapproved news feeds. Add license, timestamp, freshness and identity gates.",
+      "evidence": ["S16:participation", "S25:download", "S23:key"],
+      "originalLineSha256": "8dd27f3dbc295b21be88998397375ba3be5361a0fde3a670f70b6160b5b27422"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 319,
+      "end": 331,
+      "subject": "Model / consensus scraping / self-healing retraining",
+      "disposition": "Corrected",
+      "review": "Keep baseline proposal; no competitive-output harvesting. Vendor self-healing text does not establish nightly auto-retraining.",
+      "evidence": ["S04:selfhealing", "S04:human", "S14:training"],
+      "originalLineSha256": "1a86df863d4e033da888bc3d38d048c8068bc6912f627334212692638bb3cb63"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 334,
+      "end": 337,
+      "subject": "Ownership training from posted winners",
+      "disposition": "Replaced",
+      "review": "Need licensed contest-wide labels with known population; selection-biased posts are not established training truth.",
+      "evidence": [],
+      "originalLineSha256": "154727a729f6632a662fe960168d079a86c09f430fdeaecd113e23592c452a7d"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 340,
+      "end": 346,
+      "subject": "MILP plan, GPP score and unfinished-game swap",
+      "disposition": "Corrected",
+      "review": "Implementation is bounded independent search. Remove unvalidated leverage objective. Freeze started-game players in exact slots, not just finished games.",
+      "evidence": [],
+      "originalLineSha256": "1abb7d7a6d9b9700bf7e4d9f2f9505236e281b68d3fcedee6c4b31a1d35b8415"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 349,
+      "end": 354,
+      "subject": "Web stack, free hosting and data branch",
+      "disposition": "Replaced",
+      "review": "Pages static site works now. Future sports backend/secret storage not delivered; no other branch is used.",
+      "evidence": ["S28:static"],
+      "originalLineSha256": "dd7a6f7e2f6f987a22751224bb2e74552a75c7819a74a0b0bac6ff7687e5e74a"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 357,
+      "end": 359,
+      "subject": "Prop mean gap as +EV",
+      "disposition": "Corrected",
+      "review": "Probability and payout arithmetic separated from projection gaps. Calibration remains missing.",
+      "evidence": ["S07:edge"],
+      "originalLineSha256": "698871d6a9f0d946ab559a3c37f71d70125442f228d5625b05ab3bdc839114dd"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 368,
+      "end": 369,
+      "subject": "Legal / TOS flag",
+      "disposition": "Strengthened",
+      "review": "Explicit restriction evidence; no user-upload requirement substituted for authorization.",
+      "evidence": ["S14:scraping", "S14:licenses"],
+      "originalLineSha256": "6dce22f2ad733c830328e10e167754b3cf8fa668b57a585494dd24dd9aa624d9"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 372,
+      "end": 379,
+      "subject": "Patents and unknown coefficients",
+      "disposition": "Corrected",
+      "review": "Unknowns preserved without implying patent safety or recovered factors.",
+      "evidence": ["S14:patents", "S04:variables"],
+      "originalLineSha256": "932bda3d3e7f1120087f1518b1c880d639f4ee3b8417d9a60face6efc5c5aeec"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 381,
+      "end": 382,
+      "subject": "Guessed suppliers / minutes-behind guarantee",
+      "disposition": "Removed speculation",
+      "review": "No LineStar supplier identities or comparative latency measured.",
+      "evidence": ["S14:availability"],
+      "originalLineSha256": "763441a2ba99afb39f72633f29d1a031963ed514184a1a35df42e2564a96e3df"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 385,
+      "end": 386,
+      "subject": "Ownership timing and no free bulk API exists",
+      "disposition": "Removed unsupported universal claims",
+      "review": "This project has not secured licensed ownership labels; no exhaustive claim about all available sources.",
+      "evidence": [],
+      "originalLineSha256": "85388220efec3cff1aaab827dc34057ed635117aa842810e7f6a9e8bcae6cd5c"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 389,
+      "end": 390,
+      "subject": "News sentiment adds real edge",
+      "disposition": "Removed unsupported performance claim",
+      "review": "Reporting categories are documented; predictive NLP benefit is not established.",
+      "evidence": ["S02:news"],
+      "originalLineSha256": "0840d51ef17efbfe64330d48c135123bf254e4c8a7bfa83daaa71d79b6e35966"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 393,
+      "end": 397,
+      "subject": "Lower accuracy for minor sports / mandatory paid props",
+      "disposition": "Replaced",
+      "review": "Coverage and quality are unmeasured; quote/account-level access review required, not blanket claims.",
+      "evidence": [],
+      "originalLineSha256": "874000e099ced4523098d5cdc9ab014f8adcae4d0c58d14f0719bf20686fac6f"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 400,
+      "end": 401,
+      "subject": "Mobile outside first build",
+      "disposition": "Retained project limitation",
+      "review": "Responsive site is delivered; no native mobile app or notifications.",
+      "evidence": [],
+      "originalLineSha256": "89c2f65ec4a4918ef1890feb4d9bbc4c07fad3a0fffab1a1b82d582e5e0e0c19"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 407,
+      "end": 408,
+      "subject": "All official / every claim verified / all accessed",
+      "disposition": "Removed guarantee",
+      "review": "Source records specify publisher class, observation method, date, excerpt and limits. Some old links were not inspected.",
+      "evidence": [],
+      "originalLineSha256": "3c96431d69ff9f60df84ba85cf48ee4fda9879740407a7a44c5eabe6591b509c"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 410,
+      "end": 437,
+      "subject": "Vendor sources 1–7",
+      "disposition": "Replaced source list",
+      "review": "Retain observed homepage/pricing/GitBook and one inspected US App Store listing. Uninspected FD/Google Play entries are not promoted as verified.",
+      "evidence": [],
+      "originalLineSha256": "77c780d0cd4cebfaa8bc134a2caf07bcea01fed4bdea572bd23d58727ea8fd8d"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 439,
+      "end": 452,
+      "subject": "Google Patents sources 8–11",
+      "disposition": "Replaced",
+      "review": "No Google Patents mirror asserted to be the official legal record; vendor patent numbers plus verified USPTO search route.",
+      "evidence": ["S03:patents", "S27:assignments"],
+      "originalLineSha256": "c5c7131aea68ef3ee855e3db2a56dec466a6ce95b3a9c2809a9fc5704f09bda2"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 454,
+      "end": 460,
+      "subject": "Projection / ownership pages 12–13",
+      "disposition": "Not used as data evidence",
+      "review": "Documentation supports descriptions. No paid output access or live endpoint validation was performed.",
+      "evidence": [],
+      "originalLineSha256": "3741019b081b76524ebd3b8f1ce5c965d4d555193ec4356019dcfedab93b0ddb"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 464,
+      "end": 475,
+      "subject": "Alternative source links 14–23",
+      "disposition": "Replaced / bounded",
+      "review": "nflverse and nba_api maintainers inspected. Unreviewed pybaseball, nhl-api-py, sportsipy, BALLDONTLIE, TheSportsDB and ESPN gist are not certified or used. OR-Tools is not a runtime dependency. Official / maintainer source records replace a blanket free-data list.",
+      "evidence": [],
+      "originalLineSha256": "6589cd4ac7b8f1bd1151f8b7565e7eb56dcd464a426932eac3d1eb44e86cbc15"
+    },
+    {
+      "file": "docs/index.html",
+      "start": 479,
+      "end": 485,
+      "subject": "Disclaimer / generation date",
+      "disposition": "Retained with corrections",
+      "review": "Explicit independent project, dated research snapshot and synthetic demo disclaimer; no affiliation claim.",
+      "evidence": [],
+      "originalLineSha256": "5783d16953969ec8a17c648a21e9661feafdbcd932c8bd11bccd55c4b2fbbdd1"
+    },
+    {
+      "file": "README.md",
+      "start": 1,
+      "end": 20,
+      "subject": "Title and promised full verified list",
+      "disposition": "Rewritten",
+      "review": "README now states exact shipped scope and uncertainty; no full private-system recovery or quality guarantee.",
+      "evidence": [],
+      "originalLineSha256": "10aa54e03ed18e851de6079284518cba8004317bc334285032b0a84a400a4ed8"
+    },
+    {
+      "file": "README.md",
+      "start": 22,
+      "end": 30,
+      "subject": "Project structure",
+      "disposition": "Updated",
+      "review": "Document source data, shared engine, deterministic generation, tests, browser demo, CI and root publishing fallback.",
+      "evidence": [],
+      "originalLineSha256": "42a20da8cdcc06ffe9bab251e49e3951bef98f660fe40e67af480562d324a805"
+    },
+    {
+      "file": "README.md",
+      "start": 32,
+      "end": 38,
+      "subject": "Verified official source blanket",
+      "disposition": "Corrected",
+      "review": "Separate vendor, league, government, platform and community-maintainer documentation; no automatic semantic-proof claim.",
+      "evidence": [],
+      "originalLineSha256": "16363869bd711cdf746937de5eb4f570af403d200ff46ad693f63bd8b1a06c5f"
+    },
+    {
+      "file": "README.md",
+      "start": 40,
+      "end": 46,
+      "subject": "Educational / legal disclaimer",
+      "disposition": "Strengthened",
+      "review": "No bypass, protected-output ingestion, legal safety, or investment/performance guarantees.",
+      "evidence": [],
+      "originalLineSha256": "575f34cba52f854f460dbe1aa470847cd516baf5f493839cffe39dd5e5f5c46d"
+    }
+  ]
+}
